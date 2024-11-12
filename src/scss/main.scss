@@ -1,0 +1,380 @@
+@import "materialize/materialize.scss";
+
+// MY COMPONENTS ------------------------------------
+
+// Navbar
+@import "components/_navbar.scss";
+
+// Hero
+@import "components/_hero.scss";
+
+// Concluir
+@import "components/concluir";
+
+// Box Attention
+@import "components/box-attention";
+
+// Footer
+@import "components/footer";
+
+@import "components/loading";
+
+@import "components/carousel";
+
+@import "components/collapsible";
+
+@import "components/content_menu_02";
+
+@import "components/image-map";
+
+@import "components/game-fase";
+@import "components/video-box";
+// Helpers
+@import "components/helpers";
+// Geral ------------------------------------
+
+:root {
+  --navbar-height: 70px;
+}
+
+// Font Icons
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 40;
+}
+
+// Icones Material Design
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+u {
+  padding-bottom: 1px;
+  border-bottom: 3px solid var(--md-sys-color-tertiary);
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 9px;
+  background-color: var(--yellow);
+  color: var(--brown);
+  transition: all 0.25s;
+
+  &-large {
+    border-radius: 9px;
+    padding-top: 3px;
+  }
+  &.text {
+    color: var(--brown);
+    font-weight: 700;
+    &:hover {
+      color: var(--brown);
+    }
+  }
+  &-game {
+    background-color: var(--yellow);
+    border: 2px solid var(--brown);
+    box-shadow: 3px 3px 0px 0px #3b2027,
+      0px -3px 0px 0px var(--yellow-dark) inset,
+      0px 3px 0px 0px var(--yellow-light) inset;
+    border-radius: 4px;
+    font-family: $font-02;
+    padding: 12px 16px;
+    font-size: 19px;
+    color: var(--brown);
+
+    &:hover {
+      background-color: var(--yellow-dark);
+      background-image: linear-gradient(var(--yellow-dark), var(--yellow-dark));
+      box-shadow: 3px 3px 0px 0px #3b2027,
+        0px -3px 0px 0px var(--yellow-dark) inset,
+        0px 3px 0px 0px var(--yellow-light) inset;
+    }
+
+    &--gray {
+      background-color: #ccd6bf;
+      background: linear-gradient(#f5ffe8, #ccd6bf);
+      box-shadow: 0px -3px 0px 0px #babbc8 inset,
+        0px 3px 0px 0px #ffffff99 inset;
+
+      &:hover {
+        background-color: var(--yellow);
+        background-image: linear-gradient(var(--yellow), var(--yellow));
+        box-shadow: 3px 3px 0px 0px #3b2027,
+          0px -3px 0px 0px var(--yellow-dark) inset,
+          0px 3px 0px 0px var(--yellow-light) inset;
+      }
+    }
+  }
+}
+
+// Container
+.container {
+  max-width: 1180px;
+  width: 90%;
+}
+.container--medium {
+  margin: 0 auto;
+  max-width: 780px;
+  width: 90%;
+}
+
+// Para o menu não cobrir o elemento
+.scrollspy {
+  scroll-margin-top: 100px;
+}
+
+.scale-transition.scale-out {
+  height: 0 !important;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.scale-transition.scale-in {
+  height: auto !important;
+  opacity: 1;
+}
+
+.scale-out {
+  height: 0 !important;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.scale-in {
+  height: auto !important;
+  opacity: 1;
+}
+
+body::-webkit-scrollbar {
+  width: 18px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: rgb(226, 225, 222); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--yellow); /* color of the scroll thumb */
+  border-radius: 8px; /* roundness of the scroll thumb */
+  border: 3px solid var(--brown); /* creates padding around scroll thumb */
+  width: 10px;
+}
+
+body {
+  background-color: var(--blue-02);
+  overflow-x: hidden;
+  cursor: url("../img/core/cursor.svg"), auto;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.pointer {
+  cursor: url("../img/core/pointer.svg"), pointer !important;
+}
+
+// ESTRUTURA  ------------------------------------
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.floatKeyf {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.star-bg {
+  background-image: url("../img/star-bg.png");
+  background-repeat: repeat;
+  position: relative;
+  background-position: center top;
+}
+
+
+
+section {
+  overflow-x: hidden;
+}
+.game-divisor {
+  width: 100%;
+  @include mobile {
+    width: auto;
+  }
+}
+
+// ----------------------------------------------------------
+
+
+
+// ------------------------------------
+// Tratamento Aula específica
+// ------------------------------------
+
+// <!-- SESI TEC ------------------------------------>
+#sesitec {
+  #organizar {
+    background: url("../img/sky-02.png") center 100% / contain no-repeat;
+
+    .question-btn {
+      width: 37px;
+      height: 45px;
+      margin-right: auto;
+      margin-left: auto;
+      background-image: url("../img/question-btn-off.png");
+      &:hover {
+        background-image: url("../img/question-btn-on.png");
+      }
+    }
+  }
+}
+.hystmodal {
+  .modal-close:hover {
+    filter: brightness(0.85);
+  }
+}
+.hystmodal--large {
+  .hystmodal__wrap {
+    & > div > .box-attention {
+      padding: 0 !important;
+    }
+    padding-top: 110px;
+    padding-bottom: 80px;
+    @include mobile {
+      padding-top: 80px;
+    }
+
+    .hystmodal-header {
+      border-radius: 0 0 10px 10px;
+      height: 204px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .tag {
+      font-size: 11px;
+      background-color: var(--brown);
+      color: #f0fae3;
+      border-radius: 3px;
+      padding: 8px 8px 4px 8px;
+      display: inline-block;
+      line-height: 1;
+    }
+
+    .hystmodal-body {
+      .btn-game {
+        font-family: $font-stack;
+        letter-spacing: normal;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      & > ul:not(.collapsible) > li,
+      ul.collapsible ul > li {
+        margin: 16px 0;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 9 {
+  #modal-sala-#{$i} {
+    .hystmodal-header {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.6) 100%
+        ),
+        url("../img/m-s-0#{$i}.webp") 50% 50% / cover no-repeat;
+    }
+  }
+}
+
+// <!-- OFICINAS ------------------------------------>
+.box-txt-01 {
+  background-color: var(--yellow-light);
+}
+.box-txt-02 {
+  background-color: var(--yellow-dark);
+}
+
+.cards {
+  .card-reveal {
+    background-color: var(--yellow);
+    border: none;
+    .card-title {
+      display: flex;
+    }
+  }
+}
+// <!-- PLATAFORMAS EDUCACIONAIS ------------------------------------>
+#plataformas {
+  position: relative;
+  z-index: 2;
+  margin-top: -3px;
+}
+// <!-- PRÉ JOGO ------------------------------------>
+
+#missao {
+  position: relative;
+  z-index: 3;
+  background: url("../img/pre-game.png") 0% 90% / contain no-repeat,
+    linear-gradient(to bottom, var(--blue-02) 0%, #32b4f1 90%);
+  background-color: #32b4f1;
+}
+
+.icons-reveal {
+  .box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 105px;
+    height: 105px;
+    min-width: 105px;
+    min-height: 105px;
+    background-color: var(--yellow);
+    background-image: linear-gradient(#f5ffe8, #ccd6bf);
+    border: 2px solid var(--brown);
+    box-shadow: 0px -3px 0px 0px #babbc8 inset, 0px 3px 0px 0px #ffffff99 inset;
+
+    border-radius: 4px;
+
+    transition: all 0.3s;
+    img {
+      max-width: 40px;
+    }
+
+    &:hover {
+      background-color: var(--yellow);
+      background-image: linear-gradient(#f5ffe800, #ccd6bf00);
+
+      box-shadow: 3px 3px 0px 0px #3b2027,
+        0px -3px 0px 0px var(--yellow-dark) inset,
+        0px 3px 0px 0px var(--yellow-light) inset;
+      cursor: pointer;
+    }
+  }
+  .flex--justify-center {
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+}
+.tip > p {
+  color: #fff !important;
+  font-size: 13.5px !important;
+  font-family: $font-stack;
+}
