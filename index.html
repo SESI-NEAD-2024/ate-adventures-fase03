@@ -33,9 +33,10 @@
     <!-- <script src="https://unpkg.com/vue-router@4.2.0/dist/vue-router.global.js"></script> -->
 
     <!-- Scorm JS -->
-    <script src="src/js/scorm/APIWrapper.js" ></script>
+    <!-- <script src="src/js/scorm/APIWrapper.js" ></script>
     <script src="src/js/scorm/SCOFunctions.js" ></script>
-    <script src="src/js/scorm/scorm-app.js" ></script>
+    <script src="src/js/scorm/scorm-app.js" ></script> -->
+    <!-- TODO: -->
 
     <!-- Materialize JS -->
     <script
@@ -88,7 +89,9 @@
                 >A educação tecnológica na REDE SESI</span
               >
             </div>
-
+<p class="mt-60 center-align">
+  O vídeo abaixo apresenta uma prática realizada na rede usando os diversos recursos disponíveis na escola. 
+</p>
             <video-box>
               <template v-slot:play>
                 <a
@@ -123,7 +126,7 @@
             <div class="container--medium">
               <div class="center-align">
                 <h3>COMO ORGANIZAR OS EQUIPAMENTOS DO SESITEC?</h3>
-                <p>Clique nos blocos de perguntas.</p>
+                <p>Clique nos blocos de interrogação.</p>
               </div>
               <div class="row pt-60">
                 <div class="col l3 m6 s6 center-align">
@@ -220,6 +223,10 @@
             </div>
             <div class="container">
               <image-map></image-map>
+              
+            </div>
+            <div class="container--medium">
+              <p class="mt-40 center-align white-text">ATE, lembre-se de que cada escola possui os equipamentos do SESITEC de acordo com o segmento ofertado. Assim, a sua escola pode não possuir todos os equipamentos mencionados.</p>
             </div>
           </div>
 
@@ -275,18 +282,14 @@
                 seus conhecimentos.
               </p>
               <p>
-                O material das Oficinas de Robótica é composto por 20 oficinas
-                por ano escolar, com cada oficina tendo a duração de 1 hora e 40
-                minutos. O guia do professor e o manual de montagem complementam
-                o material desenvolvido para ser utilizado nas oficinas.
+                O material das Oficinas de Robótica é composto por 20 oficinas por ano escolar, com cada oficina tendo a duração de 1 hora e 40 minutos. O professor conta com o livro do professor e, em algumas oficinas, o manual de montagem para direcionar as atividades.​O material das
               </p>
 
               <div class="box-txt-01 mt-40 px-40 py-24" data-aos="fade-left">
                 <p>
-                  <b> Ensino Fundamental - Anos Iniciais:</b>
+                  <b> Educação Infantil e Ensino Fundamental – Anos Iniciais</b>
                   <br />
-                  as oficinas acontecem no contraturno e são mediadas por um
-                  professor a ser definido pela escola.
+                  As oficinas ocorrem durante o horário escolar e são mediadas pelo professor regente.
                 </p>
               </div>
             </div>
@@ -298,7 +301,7 @@
                   <div class="box-txt-02 px-40 py-24" data-aos="fade-left">
                     <p>
                       <b
-                        >Educação Infantil e Ensino Fundamental - Anos
+                        >Ensino Fundamental - Anos
                         Finais:</b
                       >
                       <br />
@@ -381,6 +384,8 @@
                           />
                         </span>
                         <p>LEGO® Education STEAM Park​</p>
+                        <p>Possui peças maiores, chamadas de peças duplas, e conta com diversos componentes, como: engrenagem, roda, guincho, dobradiça, balança, plataforma giratória, hélice e elementos decorativos.</p>
+                        <p>Permite que os alunos da Educação Infantil construam uma variedade de modelos interativos.</p>
                       </div>
                     </div>
                   </div>
@@ -427,6 +432,8 @@
                           />
                         </span>
                         <p>LEGO® Education BricQ Motion Prime​</p>
+                        <p>Possui diversos componentes, como viga, eixo, manivela, roda, contrapeso, engrenagem, barra dentada, amortecedor, roda e elementos decorativos.</p>
+                        <p>Permite que os estudantes construam uma variedade de modelos interativos. </p>
                       </div>
                     </div>
                   </div>
@@ -473,6 +480,8 @@
                           />
                         </span>
                         <p>LEGO® Education SPIKE Essential​</p>
+                        <p>Possui diversos componentes, como viga, eixo, roda e elementos decorativos. Possui também os seguintes componentes eletrônicos: motor, sensor de cor e painel de LED.</p>
+                        <p>Permite que os estudantes construam modelos interativos usando linguagem de programação.</p>
                       </div>
                     </div>
                   </div>
@@ -519,6 +528,8 @@
                           />
                         </span>
                         <p>LEGO® Education SPIKE Prime​</p>
+                        <p>Possui diversos componentes, como viga, eixo, roda, engrenagem, barra dentada e elementos decorativos. Possui também os seguintes componentes eletrônicos: sensor de cor, sensor de toque, sensor ultrassônico e motor.</p>
+                        <p>Permite que os estudantes construam modelos interativos usando linguagem de programação.​</p>
                       </div>
                     </div>
                   </div>
@@ -526,10 +537,10 @@
               </div>
 
               <!-- QR CODE -->
-              <div class="flex--align-center mt-60">
+              <div class="flex--justify-center flex--align-center mt-60">
                 <img
                   data-aos="fade-down"
-                  src="src/img/QRCODE.png"
+                  src="src/img/QRCODE-material.png"
                   alt="+"
                   loading="lazy"
                   style="width: 100%; max-width: 120px"
@@ -538,6 +549,7 @@
                 <div>
                   <p>Para conhecer o material, acesse o QR CODE ao lado</p>
                   <p style="font-size: 14px">Acesso em: 12 abr. 2024.</p>
+                  <p>Lembre-se de que os kits LEGO® não são exclusivos para as oficinas. Eles fazem parte dos equipamentos do SESITEC, e o professor pode utilizá-los em suas atividades conforme a disponibilidade.</p>
                 </div>
               </div>
             </div>
@@ -639,7 +651,7 @@
                       <div class="collapsible-body box-attention">
                         <div class="py-40">
                           <p class="mt-0">
-                            A Minecraft EducationEdition funciona essencialmente
+                            A Minecraft Education Edition funciona essencialmente
                             como uma versão virtual de blocos de montar, em que
                             os jogadores têm a capacidade de construir uma
                             variedade de estruturas.
@@ -689,7 +701,7 @@
                         <div class="py-40">
                           <p class="mt-0">
                             O ATE desempenha um papel fundamental no suporte ao
-                            uso do Minecraft EducationEdition em sala de aula.
+                            uso do Minecraft Education Edition em sala de aula.
                             Ele oferece apoio aos professores na criação,
                             configuração e personalização de mundos e lições,
                             orientando-os sobre as diversas funcionalidades da
@@ -733,13 +745,10 @@
               <div class="row">
                 <div class="col m7 s12">
                   <p class="white-text">
-                    A plataforma educacional CoderZ é uma ferramenta voltada
-                    para o ensino de programação e matemática, adotando a
-                    metodologia STEAM (Ciência, Tecnologia, Engenharia, Artes e
-                    Matemática) e utilizando recursos gamificados com o objetivo
-                    de fomentar a educação tecnológica e preparar os jovens para
-                    os desafios do futuro.
+                    A plataforma educacional CoderZ é uma ferramenta que está disponível para os professores de Matemática da Rede SESI.
                   </p>
+                  <p class="white-text">
+                    Voltada para o ensino de programação e matemática, adota a metodologia STEAM (Ciências, Tecnologia Engenharia, Artes e Matemática) e usa recursos gamificados com o objetivo de fomentar a educação tecnológica e preparar os jovens para os desafios futuro.</p>
                   <p class="white-text">
                     Associada à robótica educacional, a plataforma proporciona
                     simulações envolvendo robôs, permitindo que os alunos
@@ -761,7 +770,7 @@
                 Microsoft Edge) e oferece dois ambientes de edição de código: um
                 visual, implementado por meio da ferramenta Blockly (programação
                 em blocos), e outro textual, baseado na linguagem de programação
-                Java.
+                Phyton.
               </p>
               <!-- ACORDEON -->
               <div class="row">
@@ -998,11 +1007,9 @@
                 </p>
 
                 <p>
-                  Também é fundamental manter um controle detalhado dos números
-                  de patrimônio e de série de cada equipamento, utilizando uma
-                  planilha on-line ou ferramenta semelhante. Isso ajuda em casos
-                  de empréstimo, troca ou até perda das identificações dos
-                  dispositivos.
+                  Também é fundamental manter um controle detalhado dos números de patrimônio de cada equipamento vinculado à numeração usada para organização, utilizando uma planilha on-line ou ferramenta semelhante. Isso ajuda em casos de empréstimo, troca ou até perda das identificações dos dispositivos.​
+
+                  ​
                 </p>
               </div>
             </div>
@@ -1094,12 +1101,9 @@
                   </div>
                 </div>
                 <p>
-                  O ATE também é responsável por gerenciar o agendamento dos
-                  equipamentos para empréstimo aos professores, para uso em
-                  aulas e projetos. Isso inclui selecionar um sistema de
-                  agendamento que permita a visualização dos itens disponíveis
-                  no SESITEC, como o Teams, uma planilha on-line ou outras
-                  ferramentas adequadas.
+                  O ATE também é responsável por gerenciar o agendamento dos equipamentos para empréstimo aos professores, para uso em aulas e projetos. ​
+
+                  ​
                 </p>
 
                 <p>
@@ -1294,7 +1298,7 @@
                   </ul>
                   <p>
                     O ATE é responsável pelo controle e pela operação da
-                    impressora 3D na escola. Além disso, ele monitorar o estoque
+                    impressora 3D na escola. Além disso, ele deve monitorar o estoque
                     dos materiais e insumos necessários para o uso. Quando
                     houver necessidade de adquirir quaisquer materiais para
                     funcionamento da impressora, o ATE deve comunicar à gerência
@@ -1470,6 +1474,7 @@
 
                   <div
                     class="box-attention box-attention--02 flex--justify-between flex--align-center p-16 px-0"
+                    style="flex-wrap: wrap;"
                   >
                     <div class="flex--align-center">
                       <p>
@@ -1485,7 +1490,7 @@
                   </div>
 
                   <img
-                    src="src/img/TEMPLATE_SESITEC_oculos.jpg"
+                    src="src/img/TEMPLATE_SESITEC_oculos.png"
                     alt="Ambientes"
                     loading="lazy"
                     style="width: 100%"
@@ -1768,39 +1773,7 @@
                     Owl para consulta dos códigos identificadores de cada peça.
                   </p>
 
-                  <div
-                    class="box-attention box-attention--02 flex--justify-between flex--align-center p-16 px-0"
-                  >
-                    <div class="flex--align-center">
-                      <p>
-                        <b>Propostas de atividades SESITEC</b>
-                      </p>
-                    </div>
-                    <a
-                      href="https://fiemg.sharepoint.com/:f:/s/NITE/EuFxk3IZRzBBmBOmlLuPqf0BqUTl_c6emGSHB_PpwdHZDw?e=FilGLX"
-                      target="_blank"
-                      class="btn btn-game btn-game--gray"
-                      >Clique aqui e conheça</a
-                    >
-                  </div>
-
-                  <p>
-                    Baseadas na Base Nacional Comum Curricular (BNCC), as
-                    propostas de atividades foram elaboradas por um grupo
-                    multidisciplinar de professores da rede.
-                  </p>
-                  <p>
-                    O material contém atividades para diversos componentes
-                    curriculares, utilizando os recursos do SESITEC com um
-                    propósito pedagógico bem definido, promovendo melhorias
-                    significativas no processo de ensino-aprendizagem.
-                  </p>
-                  <p>
-                    É fundamental que o ATE se familiarize com as propostas
-                    disponíveis, para que possa realizar uma curadoria adequada
-                    e orientar os professores conforme o planejamento de suas
-                    aulas.
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -1833,12 +1806,12 @@
                   </div>
                   <div>
                     <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
-                    <p class="white-text mb-0"><b>Chromecast</b></p>
+                    <p class="white-text mb-0"><b>Streaming Media Player</b></p>
                   </div>
                 </div>
                 <div class="hystmodal-body p-24 p-16-mobile">
                   <p>
-                    O Chromecast é uma ferramenta tecnológica utilizada nas
+                    O Streaming Media Player é uma ferramenta tecnológica utilizada nas
                     escolas para facilitar a projeção de conteúdo digital nas
                     salas de aula. Esse dispositivo de streaming permite que
                     professores e alunos transmitam facilmente vídeos,
@@ -1847,7 +1820,7 @@
                     como uma TV ou projetor.
                   </p>
                   <p>
-                    O ATE deve garantir que os Chromecasts estejam prontos para
+                    O ATE deve garantir que os Streaming Media Player estejam prontos para
                     uso em sala de aula, devidamente conectados ao projetor ou à
                     TV.
                   </p>
@@ -1883,12 +1856,12 @@
                   </div>
                   <div>
                     <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
-                    <p class="white-text mb-0"><b>Estúdio</b></p>
+                    <p class="white-text mb-0"><b>Miniestúdio</b></p>
                   </div>
                 </div>
                 <div class="hystmodal-body p-24 p-16-mobile">
                   <p>
-                    O estúdio, equipado com câmera e chromakey (fundo verde), é
+                    O estúdio, equipado com câmera, tripé e chromakey (fundo verde), é
                     utilizado para enriquecer o processo de ensino,
                     proporcionando uma experiência de aprendizagem mais
                     envolvente e criativa.
@@ -2046,6 +2019,76 @@
           </div>
         </div>
         <!-- Fim Modal Sala 9-->
+
+        <!-- Modal Sala 10-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-10"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Atividades SESITEC</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <div
+                    class="box-attention box-attention--02 flex--justify-between flex--align-center p-16 px-0"
+                    style="flex-wrap: wrap;"
+                  >
+                    <div class="flex--align-center">
+                      <p>
+                        <b>Propostas de atividades SESITEC</b>
+                      </p>
+                    </div>
+                    <a
+                      href="https://fiemg.sharepoint.com/:f:/s/NITE/EuFxk3IZRzBBmBOmlLuPqf0BqUTl_c6emGSHB_PpwdHZDw?e=FilGLX"
+                      target="_blank"
+                      class="btn btn-game btn-game--gray"
+                      >Clique aqui e conheça</a
+                    >
+                  </div>
+
+                  <p>
+                    Baseadas na Base Nacional Comum Curricular (BNCC), as
+                    propostas de atividades foram elaboradas por um grupo
+                    multidisciplinar de professores da rede.
+                  </p>
+                  <p>
+                    O material contém atividades para diversos componentes
+                    curriculares, utilizando os recursos do SESITEC com um
+                    propósito pedagógico bem definido, promovendo melhorias
+                    significativas no processo de ensino-aprendizagem.
+                  </p>
+                  <p>
+                    É fundamental que o ATE se familiarize com as propostas
+                    disponíveis, para que possa realizar uma curadoria adequada
+                    e orientar os professores conforme o planejamento de suas
+                    aulas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 10-->
       </div>
     </div>
   </body>

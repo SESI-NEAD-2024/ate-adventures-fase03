@@ -11651,13 +11651,15 @@ footer.dark-mode {
   }
 }
 .content_menu_02 .nucleos-menu li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding: 4px 0;
   transition: all 0.3s ease-out;
   position: relative;
-  font-weight: 400;
+  font-weight: 600;
   font-family: rig-sans, "Roboto", "Helvetica Neue", sans-serif;
   font-size: 16px;
   color: var(--brown);
+  opacity: 0.75;
 }
 @media only screen and (max-width : 600.99px) {
   .content_menu_02 .nucleos-menu li {
@@ -11666,59 +11668,63 @@ footer.dark-mode {
 }
 .content_menu_02 .nucleos-menu li.selected {
   font-weight: 700;
-}
-.content_menu_02 .nucleos-menu li.selected::before {
-  content: ".";
-  display: block;
-  position: absolute;
-  left: -15px;
-  top: -15px;
-  font-size: 1.875rem;
-}
-@media only screen and (max-width : 600.99px) {
-  .content_menu_02 .nucleos-menu li.selected::before {
-    font-size: 1.875rem;
-  }
+  border-radius: 9px;
+  background-color: var(--yellow);
+  color: var(--brown);
+  transition: all 0.25s;
+  background-color: var(--yellow);
+  border: 2px solid var(--brown);
+  box-shadow: 0px -3px 0px 0px var(--yellow-dark) inset, 0px 3px 0px 0px var(--yellow-light) inset;
+  border-radius: 4px;
+  font-family: lores-12, "Roboto", "Helvetica Neue", sans-serif;
+  padding: 4px 8px;
+  opacity: 1;
+  font-size: 14px;
+  color: var(--brown);
 }
 .content_menu_02 .nucleos-menu li:hover {
-  font-weight: 700;
+  opacity: 1;
 }
 
 .image-map {
   position: relative;
   z-index: 1;
   width: 100%; /* Responsivo */
-}
-.image-map .image-bg {
-  width: 100%; /* Responsivo */
-  height: auto; /* Mantém a proporção */
-}
-@media only screen and (max-width : 600.99px) {
-  .image-map .image-bg {
-    display: none;
-  }
+  background-image: url("../img/Quadro.webp");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 1188/680;
 }
 .image-map .hotspot {
   position: absolute;
   cursor: pointer;
   z-index: 2;
+  filter: grayscale(0.7);
+}
+.image-map .hotspot:not(.visited) {
   animation: piscar 1s infinite;
+}
+.image-map .hotspot.visited {
+  filter: grayscale(0.7);
 }
 .image-map .hotspot img {
   width: 100%;
   transition: all 0.3s;
-}
-@media only screen and (max-width : 600.99px) {
-  .image-map .hotspot img {
-    width: 35% !important;
-    height: auto !important;
-  }
+  pointer-events: none;
+  filter: brightness(1.1);
 }
 .image-map .hotspot:hover img {
   filter: brightness(1.3);
   transform: scale(1.2);
 }
+
 @media only screen and (max-width : 600.99px) {
+  .image-map {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: none;
+  }
   .image-map .hotspot {
     position: relative;
     top: auto !important;
@@ -11731,20 +11737,20 @@ footer.dark-mode {
     justify-content: center;
     margin-bottom: 24px;
   }
-}
-@media only screen and (max-width : 600.99px) {
-  .image-map {
-    display: flex;
-    flex-wrap: wrap;
+  .image-map .hotspot img {
+    width: 50%;
+    max-width: 80px;
+  }
+  .image-map .hotspot:nth-child(1) img, .image-map .hotspot:nth-child(8) img {
+    max-width: 60px;
   }
 }
-
 @keyframes piscar {
   0%, 100% {
     filter: brightness(1);
   }
   50% {
-    filter: brightness(1.25);
+    filter: brightness(1.35);
   }
 }
 .piscando {
@@ -11824,7 +11830,7 @@ footer.dark-mode {
 .video-box .play-wrap img {
   width: 82px;
 }
-.video-box .play {
+.video-box .play:hover {
   filter: brightness(0.8);
   cursor: pointer;
 }
@@ -12064,16 +12070,16 @@ u {
   opacity: 1;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, .card-reveal::-webkit-scrollbar {
   width: 18px; /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track, .card-reveal::-webkit-scrollbar-track {
   border-radius: 0px;
   background: rgb(226, 225, 222); /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb, .card-reveal::-webkit-scrollbar-thumb {
   background-color: var(--yellow); /* color of the scroll thumb */
   border-radius: 8px; /* roundness of the scroll thumb */
   border: 3px solid var(--brown); /* creates padding around scroll thumb */
@@ -12225,6 +12231,10 @@ section {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/m-s-09.webp") 50% 50%/cover no-repeat;
 }
 
+#modal-sala-10 .hystmodal-header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/m-s-010.webp") 50% 50%/cover no-repeat;
+}
+
 .box-txt-01 {
   background-color: var(--yellow-light);
 }
@@ -12239,6 +12249,11 @@ section {
 }
 .cards .card-reveal .card-title {
   display: flex;
+}
+
+.card-image.activator > img {
+  max-height: 250px;
+  object-fit: contain;
 }
 
 #plataformas {

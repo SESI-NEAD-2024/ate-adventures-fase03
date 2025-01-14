@@ -204,30 +204,9 @@ export default {
        
               `,
         },
+       
         {
           id: 9,
-          //html
-          html: `
-            
-            <div>
-              <img
-                src="./src/img/y-10.webp"
-                alt="App Office 365"
-                loading="lazy"
-                
-                style="width: 100%; max-width: 70px"
-              />
-            </div>
-            <div>
-              <p class="mt-0">
-              Este aplicativo permite eliminar distâncias ao conectar pessoas de diferentes países. Ele realiza chamadas de vídeo e voz gratuitas entre dois ou mais usuários, além de permitir o envio de mensagens de chat e o compartilhamento de arquivos.
-               </p>
-            </div>
-        
-              `,
-        },
-        {
-          id: 10,
           //html
           html: `
            
@@ -254,7 +233,7 @@ export default {
   methods: {
     menu(event, menuOption) {
       // Remove classe de todos
-      let nucleosItems = document.getElementsByClassName("nucleos-item");
+      let nucleosItems = document.querySelectorAll(".content_menu_02--a .nucleos-item");
       for (var i = 0; i < nucleosItems.length; i++) {
         nucleosItems[i].classList.remove("selected");
       }
@@ -275,7 +254,7 @@ export default {
   //html
   template: `
      
-          <div class="content_menu_02" :data-order="idSelected">
+          <div class="content_menu_02 content_menu_02--a" :data-order="idSelected">
             <div class="box-attention content px-24 py-16 p-8-mobile" >
               <div class="row">
                 <div class="col m3 s3 nucleos-menu">
@@ -289,8 +268,7 @@ export default {
                     <li @click="menu($event, 6)" class="pointer nucleos-item">PowerPoint</li>
                     <li @click="menu($event, 7)" class="pointer nucleos-item">Sway</li>
                     <li @click="menu($event, 8)" class="pointer nucleos-item">Forms</li>
-                    <li @click="menu($event, 9)" class="pointer nucleos-item">Skype</li>
-                    <li @click="menu($event, 10)" class="pointer nucleos-item">Planner</li>
+                    <li @click="menu($event, 9)" class="pointer nucleos-item">Planner</li>
 
                   </ul>
                 </div>

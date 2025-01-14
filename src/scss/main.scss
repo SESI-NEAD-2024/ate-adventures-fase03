@@ -146,16 +146,16 @@ u {
   opacity: 1;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, .card-reveal::-webkit-scrollbar {
   width: 18px; /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track, .card-reveal::-webkit-scrollbar-track {
   border-radius: 0px;
   background: rgb(226, 225, 222); /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb, .card-reveal::-webkit-scrollbar-thumb {
   background-color: var(--yellow); /* color of the scroll thumb */
   border-radius: 8px; /* roundness of the scroll thumb */
   border: 3px solid var(--brown); /* creates padding around scroll thumb */
@@ -204,8 +204,6 @@ body {
   background-position: center top;
 }
 
-
-
 section {
   overflow-x: hidden;
 }
@@ -217,8 +215,6 @@ section {
 }
 
 // ----------------------------------------------------------
-
-
 
 // ------------------------------------
 // Tratamento Aula específica
@@ -289,7 +285,7 @@ section {
   }
 }
 
-@for $i from 1 through 9 {
+@for $i from 1 through 10 {
   #modal-sala-#{$i} {
     .hystmodal-header {
       background: linear-gradient(
@@ -319,6 +315,12 @@ section {
     }
   }
 }
+
+.card-image.activator > img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
 // <!-- PLATAFORMAS EDUCACIONAIS ------------------------------------>
 #plataformas {
   position: relative;

@@ -7,6 +7,19 @@ export default {
   },
   methods: {
 
+    /**
+     * @description
+     * Marca o ponto de interesse como visitado
+     * @param {Event} event - Evento do clique
+     */
+    visit(event){
+      event.preventDefault();
+      if(!event.target.classList.contains("visited")){
+        event.target.classList.add("visited");
+      }
+      console.log(event.target);
+      
+    }
 
   },
 
@@ -14,10 +27,9 @@ export default {
   template:   //html
   `
   <div class="image-map">
-  <img class="image-bg" src="./src/img/Quadro.webp" alt="Sala de aula" loading="lazy">
-
+  
   <!-- Hotspots (as áreas clicáveis) -->
-  <div data-hystmodal="#modal-sala-1" class="hotspot" style="left: 24%; top: 36%; width: 4%;">
+  <div data-hystmodal="#modal-sala-1" class="hotspot" @click="visit($event)"  style="left: 24%; top: 36%; width: 4%;">
     <img
     
     src="src/img/sala-01.png"
@@ -26,7 +38,7 @@ export default {
   />
   </div>
 
-  <div data-hystmodal="#modal-sala-2" class="hotspot" style="left: 31%; top: 39%; width: 5.5%;"  >
+  <div data-hystmodal="#modal-sala-2" class="hotspot" @click="visit($event)" style="left: 31%; top: 39%; width: 5.5%;"  >
     <img
     
     src="src/img/sala-02.png"
@@ -35,7 +47,7 @@ export default {
   />
   </div>
 
-  <div data-hystmodal="#modal-sala-3" class="hotspot" style="left: 8%; top: 72%; width: 5%;"  >
+  <div data-hystmodal="#modal-sala-3" class="hotspot" @click="visit($event)" style="left: 8%; top: 72%; width: 5%;"  >
     <img
     
     src="src/img/sala-03.png"
@@ -44,7 +56,7 @@ export default {
   />
   </div>
 
-  <div data-hystmodal="#modal-sala-4" class="hotspot" style="left: 51%; top: 55%; width: 5.5%;"  >
+  <div data-hystmodal="#modal-sala-4" class="hotspot" @click="visit($event)" style="left: 51%; top: 55%; width: 5.5%;"  >
     <img
     
     src="src/img/sala-04.png"
@@ -53,7 +65,7 @@ export default {
   />
   </div>
 
-  <div data-hystmodal="#modal-sala-5" class="hotspot" style="left: 60%; top: 55%; width: 5.5%;"  >
+  <div data-hystmodal="#modal-sala-5" class="hotspot" @click="visit($event)" style="left: 60%; top: 55%; width: 5.5%;"  >
   <img
   
   src="src/img/sala-05.png"
@@ -62,7 +74,7 @@ export default {
 />
 </div>
 
-<div data-hystmodal="#modal-sala-6" class="hotspot" style="left: 46%; top: 75%; width: 7%;"  >
+<div data-hystmodal="#modal-sala-6" class="hotspot" @click="visit($event)" style="left: 46%; top: 75%; width: 7%;"  >
   <img
   
   src="src/img/sala-06.png"
@@ -71,7 +83,7 @@ export default {
   />
   </div>
 
-  <div data-hystmodal="#modal-sala-7" class="hotspot" style="left: 60%; top: 80%; width: 5%;"  >
+  <div data-hystmodal="#modal-sala-7" class="hotspot" @click="visit($event)" style="left: 60%; top: 80%; width: 5%;"  >
   <img
   
   src="src/img/sala-07.png"
@@ -80,7 +92,7 @@ export default {
   />
   </div>
 
-  <div data-hystmodal="#modal-sala-8" class="hotspot" style="left: 75%; top: 45%; width: 6%;"  >
+  <div data-hystmodal="#modal-sala-8" class="hotspot" @click="visit($event)" style="left: 75%; top: 45%; width: 6%;"  >
   <img
   
   src="src/img/sala-08.png"
@@ -89,7 +101,7 @@ export default {
   />
   </div>
 
-  <div data-hystmodal="#modal-sala-9" class="hotspot" style="left: 85%; top: 75%; width: 9%;"  >
+  <div data-hystmodal="#modal-sala-9" class="hotspot" @click="visit($event)" style="left: 85%; top: 75%; width: 9%;"  >
   <img
   
   src="src/img/sala-09.png"
@@ -97,6 +109,16 @@ export default {
   loading="lazy"
   />
   </div>
+
+  <div data-hystmodal="#modal-sala-10" class="hotspot" @click="visit($event)" style="left: 16%; top: 68%; width: 5%;"  >
+  <img
+  
+  src="src/img/sala-10.png"
+  alt="Sesitec"
+  loading="lazy"
+  />
+  </div>
+
 
 
 </div>
