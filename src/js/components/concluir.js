@@ -1,10 +1,4 @@
-export default {
-  mounted(){
-console.log('oi');
-
-  },
-    template: //html
-    `
+export default{mounted(){console.log("oi")},template:`
     <div id="concluir" class="py-144 scrollspy flex--justify-center" >
        
         <a  href="#/" id="finishButton" class="btn-large filled waves-effect waves-light bubbly-button">Concluir
@@ -12,5 +6,4 @@ console.log('oi');
         </a>
         
     </div>
-    `,
-  };
+    `};

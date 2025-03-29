@@ -1,31 +1,4 @@
-
-export default {
-
-  mounted() {
-
-    
-  },
-  methods: {
-
-    /**
-     * @description
-     * Marca o ponto de interesse como visitado
-     * @param {Event} event - Evento do clique
-     */
-    visit(event){
-      event.preventDefault();
-      if(!event.target.classList.contains("visited")){
-        event.target.classList.add("visited");
-      }
-      console.log(event.target);
-      
-    }
-
-  },
-
-
-  template:   //html
-  `
+export default{mounted(){},methods:{visit(a){a.preventDefault(),a.target.classList.contains("visited")||a.target.classList.add("visited"),console.log(a.target)}},template:`
   <div class="image-map">
   
   <!-- Hotspots (as áreas clicáveis) -->
@@ -122,5 +95,4 @@ export default {
 
 
 </div>
-   `,
-};
+   `};

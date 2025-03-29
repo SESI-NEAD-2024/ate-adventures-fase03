@@ -1,13 +1,4 @@
-export default {
-  data() {
-    return {
-      idSelected: 0,
-      items: [
-        {
-          id: 0,
-          
-          html://html
-           `
+export default{data(){return{idSelected:0,items:[{id:0,html:`
             
             <div>
               <img
@@ -22,13 +13,7 @@ export default {
               <p class="mt-0">Responsável pelo envio e recebimento de e-mails, também facilita o agendamento de reuniões e o controle de compromissos.</p>
             </div>
           
-              `,
-        },
-
-        {
-          id: 1,
-          //html
-          html: `
+              `},{id:1,html:`
 
           
             <div>
@@ -46,12 +31,7 @@ export default {
               </p>
             </div>
           
-              `,
-        },
-        {
-          id: 2,
-          //html
-          html: `
+              `},{id:2,html:`
            
             <div>
               <img
@@ -68,12 +48,7 @@ export default {
               </p>
             </div>
           
-              `,
-        },
-        {
-          id: 3,
-          //html
-          html: `
+              `},{id:3,html:`
             
             <div>
               <img
@@ -90,13 +65,7 @@ export default {
               </p>
             </div>
           
-              `,
-        },
-        
-        {
-          id: 4,
-          //html
-          html: `
+              `},{id:4,html:`
             
             <div class="col m3 s12">
               <img
@@ -113,12 +82,7 @@ export default {
                </p>
             </div>
           
-              `,
-        },
-        {
-          id: 5,
-          //html
-          html: `
+              `},{id:5,html:`
             
             <div>
               <img
@@ -135,13 +99,7 @@ export default {
                </p>
             </div>
           
-              `,
-        },
-        
-        {
-          id: 6,
-          //html
-          html: `
+              `},{id:6,html:`
            
             <div>
               <img
@@ -158,12 +116,7 @@ export default {
                </p>
             </div>
           
-              `,
-        },
-        {
-          id: 7,
-          //html
-          html: `
+              `},{id:7,html:`
           
             <div>
               <img
@@ -180,12 +133,7 @@ export default {
                </p>
             </div>
        
-              `,
-        },
-        {
-          id: 8,
-          //html
-          html: `
+              `},{id:8,html:`
           
             <div>
               <img
@@ -202,13 +150,7 @@ export default {
                </p>
             </div>
        
-              `,
-        },
-       
-        {
-          id: 9,
-          //html
-          html: `
+              `},{id:9,html:`
            
             <div>
               <img
@@ -225,34 +167,7 @@ export default {
                </p>
             </div>
         
-              `,
-        },
-      ],
-    };
-  },
-  methods: {
-    menu(event, menuOption) {
-      // Remove classe de todos
-      let nucleosItems = document.querySelectorAll(".content_menu_02--a .nucleos-item");
-      for (var i = 0; i < nucleosItems.length; i++) {
-        nucleosItems[i].classList.remove("selected");
-      }
-
-      // Adiciona a classe para o item clicado
-      event.target.classList.add("selected");
-
-      // Conteúdo atual selecionado para mostrar html
-      this.idSelected = menuOption;
-
-
-    },
-  },
-  mounted() {
-    
-  },
-
-  //html
-  template: `
+              `}]}},methods:{menu(e,i){for(var a=document.querySelectorAll(".content_menu_02--a .nucleos-item"),s=0;s<a.length;s++)a[s].classList.remove("selected");e.target.classList.add("selected"),this.idSelected=i}},mounted(){},template:`
      
           <div class="content_menu_02 content_menu_02--a" :data-order="idSelected">
             <div class="box-attention content px-24 py-16 p-8-mobile" >
@@ -282,6 +197,4 @@ export default {
           </div>
 
     
-    `,
-};
-
+    `};
