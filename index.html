@@ -1,17 +1,2035 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><!--Let browser know website is optimized for mobile--><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A educação tecnológica na REDE SESI"><meta name="author" content="SESI EAD"><title>FASE 3 | ATE Adventures</title><link rel="icon" type="image/png" href="src/img/core/Favicon.webp"><!-- Font --><link rel="stylesheet" href="https://use.typekit.net/hgj6bzh.css"><!-- CSS --><link type="text/css" rel="stylesheet" href="src/css/main.css" media="screen"><!-- Vue DEV MODE --><!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> --><!-- Vue PROD MODE --><script rel="preconnect" src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script><!-- Vue Router --><!-- <script src="https://unpkg.com/vue-router@4.2.0/dist/vue-router.global.js"></script> --><!-- Scorm JS --><script src="src/js/scorm/APIWrapper.js"></script><script src="src/js/scorm/SCOFunctions.js"></script><script src="src/js/scorm/scorm-app.js"></script><!-- Materialize JS --><script type="text/javascript" src="src/js/materialize/materialize.js" defer="defer"></script><!-- AOS JS --><script type="text/javascript" src="src/js/aos-master/aos.js" defer="defer"></script><!-- HystModal Modal JS--><link rel="stylesheet" href="src/css/hystmodal.min.css"><script src="src/js/hystmodal/hystmodal.min.js"></script><!-- YouTube IFrame Player API --><script src="https://www.youtube.com/iframe_api"></script><!--**************** App.js JS customizado aqui ****************--><script type="module" src="src/js/app.js"></script><!-- AOS Animation CSS--><link type="text/css" rel="stylesheet" href="src/css/aos.css"><!-- HystModal Modal CSS--><link rel="stylesheet" href="src/css/hystmodal.min.css"></head><body><div id="app"><!-- loading ---------------------------------- --><div id="loading"><div class="spinner"></div></div><div id="content"><!-- Navbar ---------------------------------- --><navbar></navbar><!-- Hero Banner ---------------------------------- --><hero><div><h2>FASE 3</h2><br><div style="max-width: 750px; margin-left: auto; margin-right: auto"><span class="display1" style="text-transform: uppercase">A educação tecnológica na REDE SESI</span></div><p class="mt-60 center-align">O vídeo abaixo apresenta uma prática realizada na rede usando os diversos recursos disponíveis na escola.</p><video-box><template v-slot:play><a href="https://www.youtube.com/watch?v=L_wyzipzSZw" target="_blank"><img src="src/img/video-play.svg" alt="Play" loading="lazy"></a></template><template v-slot:visual><img src="src/img/sesi-fase-3.jpg" alt="SESI" loading="lazy" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: center;"></template></video-box></div>​</hero><!-- SESITEC ------------------------------------><section id="sesitec" class="pt-80 pt-0-mobile" style="line-height: 0"><div class="container"><div class="center-align mb-40"><h1 data-aos="fade-up" class="mb-24">SESITEC</h1><h3>O que é e qual a relação do SESITEC com o ATE?</h3></div><carousel></carousel></div><!-- ORGANIZAR EQUIPAMENTOS ------------------------------------><div id="organizar" class="py-60 mb-80"><div class="container--medium"><div class="center-align"><h3>COMO ORGANIZAR OS EQUIPAMENTOS DO SESITEC?</h3><p>Clique nos blocos de interrogação.</p></div><div class="row pt-60"><div class="col l3 m6 s6 center-align"><div class="question-btn pointer mb-40" data-hystmodal="#modal-1" data-aos="fade-up"></div><img src="src/img/blocos.png" alt="blocos" loading="lazy" style="width: 100%; max-width: 64px" class="mb-24"></div><div class="col l3 m6 s6 center-align"><div class="question-btn pointer mb-40" data-hystmodal="#modal-2" data-aos="fade-up"></div><img src="src/img/blocos.png" alt="blocos" loading="lazy" style="width: 100%; max-width: 64px" class="mb-24"></div><div class="col l3 m6 s6 center-align"><div class="question-btn pointer mb-40" data-hystmodal="#modal-3" data-aos="fade-up"></div><img src="src/img/blocos.png" alt="blocos" loading="lazy" style="width: 100%; max-width: 64px" class="mb-24"></div><div class="col l3 m6 s6 center-align"><div class="question-btn pointer mb-40" data-hystmodal="#modal-4" data-aos="fade-up"></div><img src="src/img/blocos.png" alt="blocos" loading="lazy" style="width: 100%; max-width: 64px" class="mb-24"></div></div></div></div><img src="src/img/nucleos-section.png" alt="Seção" loading="lazy" style="margin-bottom: -3px" class="game-divisor"><!-- EQUIPAMENTOS E DISPOSITIVOS ------------------------------------><div id="dispositivos" class="py-80 bg-blue-04"><div class="container center-align mb-40"><div class="flex--align-center flex--column"><h3 class="white-text">EQUIPAMENTOS E DISPOSITIVOS</h3><div class="white-text flex--align-center mt-40"><img data-aos="fade-right" src="src/img/plus.png" alt="+" loading="lazy" style="width: 100%; max-width: 40px" class="mr-24"><p class="m-0 white-text left-align">Clique nos equipamentos usados no SESITEC e veja uma explicação sobre cada um deles.</p></div></div></div><div class="container"><image-map></image-map></div><div class="container--medium"><p class="mt-40 center-align white-text">ATE, lembre-se de que cada escola possui os equipamentos do SESITEC de acordo com o segmento ofertado. Assim, a sua escola pode não possuir todos os equipamentos mencionados.</p></div></div><img src="src/img/nucleos-section-bottom.png" alt="Seção" loading="lazy" class="game-divisor" style="margin-top: -4px"></section><!-- OFICINAS ------------------------------------><section id="oficinas" class="py-80"><!-- OFICINAS DE ROBÓTICA  --><div><div class="container--medium"><div class="center-align mb-40"><h1 data-aos="fade-up">OFICINAS DE ROBÓTICA</h1></div><div class="row"><div class="col m5 s12"><img src="src/img/static-01.png" alt="Estudande do sesi" loading="lazy" style="width: 100%; max-width: 100%"></div><div class="col m6 s12"><p>A Rede SESI de Educação oferece aos estudantes experiências com robótica educacional, preparando-os para enfrentar desafios globais e para estabelecer conexões entre a robótica e suas aplicações na sociedade.</p><p>As atividades teóricas e práticas das oficinas de robótica são contextualizadas com temáticas dos componentes curriculares, adequadas à faixa etária dos estudantes e alinhadas às habilidades da BNCC de Computação. O objetivo é promover o desenvolvimento dos estudantes na elaboração e gerenciamento de projetos de engenharia para solucionar situações-problema do cotidiano.</p></div></div><p class="mt-40 mt-0-mobile">O estudante assume o papel de protagonista na construção do próprio conhecimento. Ele adquire conceitos básicos de mecânica, programação, robótica, cultura e cidadania digital, além de raciocínio lógico-matemático, contribuindo para a ampliação de seus conhecimentos.</p><p>O material das Oficinas de Robótica é composto por 20 oficinas por ano escolar, com cada oficina tendo a duração de 1 hora e 40 minutos. O professor conta com o livro do professor e, em algumas oficinas, o manual de montagem para direcionar as atividades.</p><div class="box-txt-01 mt-40 px-40 py-24" data-aos="fade-left"><p><b>Educação Infantil e Ensino Fundamental – Anos Iniciais</b><br>As oficinas ocorrem durante o horário escolar e são mediadas pelo professor regente.</p></div></div><div class="container"><div class="row"><div class="col l3 m2 s12"></div><div class="col l8 m10 s12"><div class="box-txt-02 px-40 py-24" data-aos="fade-left"><p><b>Ensino Fundamental - Anos Finais:</b><br>As oficinas acontecem no contraturno e são mediadas por um professor a ser definido pela escola.</p></div></div></div></div></div><!-- Frase --><div class="star-bg bg-blue-04 py-40 my-80"><div class="container"><div class="flex--align-center"><img data-aos="fade-right" src="src/img/plus.png" alt="+" loading="lazy" style="width: 100%; max-width: 40px" class="mr-24"><p class="white-text">Conhecer os kits disponíveis na escola e o material das oficinas de robótica é importante para que o ATE possa apoiar os professores nas demandas relacionadas às oficinas de robótica.</p></div></div></div><!-- CARDS --><div class="cards"><div class="container--medium"><div><!-- CARDS --><div class="row"><div class="col m6 s12"><!-- Card --><div class="card box-attention"><div class="card-image activator"><img src="src/img/card-01.png" alt="kit de robótica 01" loading="lazy" style="width: 100%"><div class="activator waves-effect waves-light" style="position: absolute;
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="A educação tecnológica na REDE SESI" />
+    <meta name="author" content="SESI EAD" />
+    <title>FASE 3 | ATE Adventures</title>
+    <link rel="icon" type="image/png" href="src/img/core/Favicon.webp" />
+    <!-- Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/hgj6bzh.css" />
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <!-- Vue PROD MODE -->
+    <script
+      rel="preconnect"
+      src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
+    ></script>
+    <!-- Vue Router -->
+    <!-- <script src="https://unpkg.com/vue-router@4.2.0/dist/vue-router.global.js"></script> -->
+    <!-- Scorm JS -->
+    <!-- <script src="src/js/scorm/APIWrapper.js"></script>
+    <script src="src/js/scorm/SCOFunctions.js"></script>
+    <script src="src/js/scorm/scorm-app.js"></script> -->
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/materialize/materialize.js"
+      defer="defer"
+    ></script>
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer="defer"
+    ></script>
+    <!-- HystModal Modal JS-->
+    <link rel="stylesheet" href="src/css/hystmodal.min.css" />
+    <script src="src/js/hystmodal/hystmodal.min.js"></script>
+    <!-- YouTube IFrame Player API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!--**************** App.js JS customizado aqui ****************-->
+    <script type="module" src="src/js/app.js"></script>
+    <!-- AOS Animation CSS-->
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+    <!-- HystModal Modal CSS-->
+    <link rel="stylesheet" href="src/css/hystmodal.min.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- loading ---------------------------------- -->
+      <div id="loading"><div class="spinner"></div></div>
+      <div id="content">
+        <!-- Navbar ---------------------------------- --><navbar
+        ></navbar
+        ><!-- Hero Banner ---------------------------------- --><hero
+          ><div>
+            <h2>FASE 3</h2>
+            <br />
+            <div
+              style="max-width: 750px; margin-left: auto; margin-right: auto"
+            >
+              <span class="display1" style="text-transform: uppercase"
+                >A educação tecnológica na REDE SESI</span
+              >
+            </div>
+            <p class="mt-60 center-align">
+              O vídeo abaixo apresenta uma prática realizada na rede usando os
+              diversos recursos disponíveis na escola.
+            </p>
+            <video-box
+              ><template v-slot:play
+                ><a
+                  href="https://www.youtube.com/watch?v=L_wyzipzSZw"
+                  target="_blank"
+                  ><img
+                    src="src/img/video-play.svg"
+                    alt="Play"
+                    loading="lazy" /></a></template
+              ><template v-slot:visual
+                ><img
+                  src="src/img/sesi-fase-3.jpg"
+                  alt="SESI"
+                  loading="lazy"
+                  style="
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                    object-position: center;
+                  " /></template
+            ></video-box>
+          </div>
+          ​</hero
+        ><!-- SESITEC ------------------------------------>
+        <section id="sesitec" class="pt-80 pt-0-mobile" style="line-height: 0">
+          <div class="container">
+            <div class="center-align mb-40">
+              <h1 data-aos="fade-up" class="mb-24">SESITEC</h1>
+              <h3>O que é e qual a relação do SESITEC com o ATE?</h3>
+            </div>
+            <carousel></carousel>
+          </div>
+          <!-- ORGANIZAR EQUIPAMENTOS ------------------------------------>
+          <div id="organizar" class="py-60 mb-80">
+            <div class="container--medium">
+              <div class="center-align">
+                <h3>COMO ORGANIZAR OS EQUIPAMENTOS DO SESITEC?</h3>
+                <p>Clique nos blocos de interrogação.</p>
+              </div>
+              <div class="row pt-60">
+                <div class="col l3 m6 s6 center-align">
+                  <div
+                    class="question-btn pointer mb-40"
+                    data-hystmodal="#modal-1"
+                    data-aos="fade-up"
+                  ></div>
+                  <img
+                    src="src/img/blocos.png"
+                    alt="blocos"
+                    loading="lazy"
+                    style="width: 100%; max-width: 64px"
+                    class="mb-24"
+                  />
+                </div>
+                <div class="col l3 m6 s6 center-align">
+                  <div
+                    class="question-btn pointer mb-40"
+                    data-hystmodal="#modal-2"
+                    data-aos="fade-up"
+                  ></div>
+                  <img
+                    src="src/img/blocos.png"
+                    alt="blocos"
+                    loading="lazy"
+                    style="width: 100%; max-width: 64px"
+                    class="mb-24"
+                  />
+                </div>
+                <div class="col l3 m6 s6 center-align">
+                  <div
+                    class="question-btn pointer mb-40"
+                    data-hystmodal="#modal-3"
+                    data-aos="fade-up"
+                  ></div>
+                  <img
+                    src="src/img/blocos.png"
+                    alt="blocos"
+                    loading="lazy"
+                    style="width: 100%; max-width: 64px"
+                    class="mb-24"
+                  />
+                </div>
+                <div class="col l3 m6 s6 center-align">
+                  <div
+                    class="question-btn pointer mb-40"
+                    data-hystmodal="#modal-4"
+                    data-aos="fade-up"
+                  ></div>
+                  <img
+                    src="src/img/blocos.png"
+                    alt="blocos"
+                    loading="lazy"
+                    style="width: 100%; max-width: 64px"
+                    class="mb-24"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="src/img/nucleos-section.png"
+            alt="Seção"
+            loading="lazy"
+            style="margin-bottom: -3px"
+            class="game-divisor"
+          /><!-- EQUIPAMENTOS E DISPOSITIVOS ------------------------------------>
+          <div id="dispositivos" class="py-80 bg-blue-04">
+            <div class="container center-align mb-40">
+              <div class="flex--align-center flex--column">
+                <h3 class="white-text">EQUIPAMENTOS E DISPOSITIVOS</h3>
+                <div class="white-text flex--align-center mt-40">
+                  <img
+                    data-aos="fade-right"
+                    src="src/img/plus.png"
+                    alt="+"
+                    loading="lazy"
+                    style="width: 100%; max-width: 40px"
+                    class="mr-24"
+                  />
+                  <p class="m-0 white-text left-align">
+                    Clique nos equipamentos usados no SESITEC e veja uma
+                    explicação sobre cada um deles.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container"><image-map></image-map></div>
+            <div class="container--medium">
+              <p class="mt-40 center-align white-text">
+                ATE, lembre-se de que cada escola possui os equipamentos do
+                SESITEC de acordo com o segmento ofertado. Assim, a sua escola
+                pode não possuir todos os equipamentos mencionados.
+              </p>
+            </div>
+          </div>
+          <img
+            src="src/img/nucleos-section-bottom.png"
+            alt="Seção"
+            loading="lazy"
+            class="game-divisor"
+            style="margin-top: -4px"
+          />
+        </section>
+        <!-- OFICINAS ------------------------------------>
+        <section id="oficinas" class="py-80">
+          <!-- OFICINAS DE ROBÓTICA  -->
+          <div>
+            <div class="container--medium">
+              <div class="center-align mb-40">
+                <h1 data-aos="fade-up">OFICINAS DE ROBÓTICA</h1>
+              </div>
+              <div class="row">
+                <div class="col m5 s12">
+                  <img
+                    src="src/img/static-01.png"
+                    alt="Estudande do sesi"
+                    loading="lazy"
+                    style="width: 100%; max-width: 100%"
+                  />
+                </div>
+                <div class="col m6 s12">
+                  <p>
+                    A Rede SESI de Educação oferece aos estudantes experiências
+                    com robótica educacional, preparando-os para enfrentar
+                    desafios globais e para estabelecer conexões entre a
+                    robótica e suas aplicações na sociedade.
+                  </p>
+                  <p>
+                    As atividades teóricas e práticas das oficinas de robótica
+                    são contextualizadas com temáticas dos componentes
+                    curriculares, adequadas à faixa etária dos estudantes e
+                    alinhadas às habilidades da BNCC de Computação. O objetivo é
+                    promover o desenvolvimento dos estudantes na elaboração e
+                    gerenciamento de projetos de engenharia para solucionar
+                    situações-problema do cotidiano.
+                  </p>
+                </div>
+              </div>
+              <p class="mt-40 mt-0-mobile">
+                O estudante assume o papel de protagonista na construção do
+                próprio conhecimento. Ele adquire conceitos básicos de mecânica,
+                programação, robótica, cultura e cidadania digital, além de
+                raciocínio lógico-matemático, contribuindo para a ampliação de
+                seus conhecimentos.
+              </p>
+              <p>
+                O material das Oficinas de Robótica é composto por 20 oficinas
+                por ano escolar, com cada oficina tendo a duração de 1 hora e 40
+                minutos. O professor conta com o livro do professor e, em
+                algumas oficinas, o manual de montagem para direcionar as
+                atividades.
+              </p>
+              <div class="box-txt-01 mt-40 px-40 py-24" data-aos="fade-left">
+                <p>
+                  <b>Educação Infantil e Ensino Fundamental – Anos Iniciais</b
+                  ><br />As oficinas ocorrem durante o horário escolar e são
+                  mediadas pelo professor regente.
+                </p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col l3 m2 s12"></div>
+                <div class="col l8 m10 s12">
+                  <div class="box-txt-02 px-40 py-24" data-aos="fade-left">
+                    <p>
+                      <b>Ensino Fundamental - Anos Finais:</b><br />As oficinas
+                      acontecem no contraturno e são mediadas por um professor a
+                      ser definido pela escola.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Frase -->
+          <div class="star-bg bg-blue-04 py-40 my-80">
+            <div class="container">
+              <div class="flex--align-center">
+                <img
+                  data-aos="fade-right"
+                  src="src/img/plus.png"
+                  alt="+"
+                  loading="lazy"
+                  style="width: 100%; max-width: 40px"
+                  class="mr-24"
+                />
+                <p class="white-text">
+                  Conhecer os kits disponíveis na escola e o material das
+                  oficinas de robótica é importante para que o ATE possa apoiar
+                  os professores nas demandas relacionadas às oficinas de
+                  robótica.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- CARDS -->
+          <div class="cards">
+            <div class="container--medium">
+              <div>
+                <!-- CARDS -->
+                <div class="row">
+                  <div class="col m6 s12">
+                    <!-- Card -->
+                    <div class="card box-attention">
+                      <div class="card-image activator">
+                        <img
+                          src="src/img/card-01.png"
+                          alt="kit de robótica 01"
+                          loading="lazy"
+                          style="width: 100%"
+                        />
+                        <div
+                          class="activator waves-effect waves-light"
+                          style="
+                            position: absolute;
                             top: 0;
                             bottom: 0;
                             right: 0;
-                            left: 0;"></div></div><div class="card-content activator"><span class="card-title activator blue-light-text flex--justify-between"><h5>Conheça</h5></span></div><div class="card-reveal"><span class="card-title flex--justify-between flex--align-center"><h5>Educação Infantil</h5><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></span><p>LEGO® Education STEAM Park​</p><p>Possui peças maiores, chamadas de peças duplas, e conta com diversos componentes, como: engrenagem, roda, guincho, dobradiça, balança, plataforma giratória, hélice e elementos decorativos.</p><p>Permite que os alunos da Educação Infantil construam uma variedade de modelos interativos.</p></div></div></div><div class="col m6 s12"><!-- Card --><div class="card box-attention"><div class="card-image activator"><img src="src/img/card-02.png" alt="kit de robótica 01" loading="lazy" style="width: 100%"><div class="activator waves-effect waves-light" style="position: absolute;
+                            left: 0;
+                          "
+                        ></div>
+                      </div>
+                      <div class="card-content activator">
+                        <span
+                          class="card-title activator blue-light-text flex--justify-between"
+                          ><h5>Conheça</h5></span
+                        >
+                      </div>
+                      <div class="card-reveal">
+                        <span
+                          class="card-title flex--justify-between flex--align-center"
+                          ><h5>Educação Infantil</h5>
+                          <img
+                            data-hystclose
+                            class="modal-close pointer"
+                            src="src/img/close-light.svg"
+                            alt="Close"
+                            loading="lazy"
+                        /></span>
+                        <p>LEGO® Education STEAM Park​</p>
+                        <p>
+                          Possui peças maiores, chamadas de peças duplas, e
+                          conta com diversos componentes, como: engrenagem,
+                          roda, guincho, dobradiça, balança, plataforma
+                          giratória, hélice e elementos decorativos.
+                        </p>
+                        <p>
+                          Permite que os alunos da Educação Infantil construam
+                          uma variedade de modelos interativos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col m6 s12">
+                    <!-- Card -->
+                    <div class="card box-attention">
+                      <div class="card-image activator">
+                        <img
+                          src="src/img/card-02.png"
+                          alt="kit de robótica 01"
+                          loading="lazy"
+                          style="width: 100%"
+                        />
+                        <div
+                          class="activator waves-effect waves-light"
+                          style="
+                            position: absolute;
                             top: 0;
                             bottom: 0;
                             right: 0;
-                            left: 0;"></div></div><div class="card-content activator"><span class="card-title activator blue-light-text flex--justify-between"><h5>Conheça</h5></span></div><div class="card-reveal"><span class="card-title flex--justify-between flex--align-center"><h5>Ensino Fundamental: 1º e 2º ano​</h5><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></span><p>LEGO® Education BricQ Motion Prime​</p><p>Possui diversos componentes, como viga, eixo, manivela, roda, contrapeso, engrenagem, barra dentada, amortecedor, roda e elementos decorativos.</p><p>Permite que os estudantes construam uma variedade de modelos interativos.</p></div></div></div><div class="col m6 s12"><!-- Card --><div class="card box-attention"><div class="card-image activator"><img src="src/img/card-03.png" alt="kit de robótica 01" loading="lazy" style="width: 100%"><div class="activator waves-effect waves-light" style="position: absolute;
+                            left: 0;
+                          "
+                        ></div>
+                      </div>
+                      <div class="card-content activator">
+                        <span
+                          class="card-title activator blue-light-text flex--justify-between"
+                          ><h5>Conheça</h5></span
+                        >
+                      </div>
+                      <div class="card-reveal">
+                        <span
+                          class="card-title flex--justify-between flex--align-center"
+                          ><h5>Ensino Fundamental: 1º e 2º ano​</h5>
+                          <img
+                            data-hystclose
+                            class="modal-close pointer"
+                            src="src/img/close-light.svg"
+                            alt="Close"
+                            loading="lazy"
+                        /></span>
+                        <p>LEGO® Education BricQ Motion Prime​</p>
+                        <p>
+                          Possui diversos componentes, como viga, eixo,
+                          manivela, roda, contrapeso, engrenagem, barra dentada,
+                          amortecedor, roda e elementos decorativos.
+                        </p>
+                        <p>
+                          Permite que os estudantes construam uma variedade de
+                          modelos interativos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col m6 s12">
+                    <!-- Card -->
+                    <div class="card box-attention">
+                      <div class="card-image activator">
+                        <img
+                          src="src/img/card-03.png"
+                          alt="kit de robótica 01"
+                          loading="lazy"
+                          style="width: 100%"
+                        />
+                        <div
+                          class="activator waves-effect waves-light"
+                          style="
+                            position: absolute;
                             top: 0;
                             bottom: 0;
                             right: 0;
-                            left: 0;"></div></div><div class="card-content activator"><span class="card-title activator blue-light-text flex--justify-between"><h5>Conheça</h5></span></div><div class="card-reveal"><span class="card-title flex--justify-between flex--align-center"><h5>Ensino Fundamental: 3º ao 5º ano​</h5><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></span><p>LEGO® Education SPIKE Essential​</p><p>Possui diversos componentes, como viga, eixo, roda e elementos decorativos. Possui também os seguintes componentes eletrônicos: motor, sensor de cor e painel de LED.</p><p>Permite que os estudantes construam modelos interativos usando linguagem de programação.</p></div></div></div><div class="col m6 s12"><!-- Card --><div class="card box-attention"><div class="card-image activator"><img src="src/img/card-04.png" alt="kit de robótica 01" loading="lazy" style="width: 100%"><div class="activator waves-effect waves-light" style="position: absolute;
+                            left: 0;
+                          "
+                        ></div>
+                      </div>
+                      <div class="card-content activator">
+                        <span
+                          class="card-title activator blue-light-text flex--justify-between"
+                          ><h5>Conheça</h5></span
+                        >
+                      </div>
+                      <div class="card-reveal">
+                        <span
+                          class="card-title flex--justify-between flex--align-center"
+                          ><h5>Ensino Fundamental: 3º ao 5º ano​</h5>
+                          <img
+                            data-hystclose
+                            class="modal-close pointer"
+                            src="src/img/close-light.svg"
+                            alt="Close"
+                            loading="lazy"
+                        /></span>
+                        <p>LEGO® Education SPIKE Essential​</p>
+                        <p>
+                          Possui diversos componentes, como viga, eixo, roda e
+                          elementos decorativos. Possui também os seguintes
+                          componentes eletrônicos: motor, sensor de cor e painel
+                          de LED.
+                        </p>
+                        <p>
+                          Permite que os estudantes construam modelos
+                          interativos usando linguagem de programação.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col m6 s12">
+                    <!-- Card -->
+                    <div class="card box-attention">
+                      <div class="card-image activator">
+                        <img
+                          src="src/img/card-04.png"
+                          alt="kit de robótica 01"
+                          loading="lazy"
+                          style="width: 100%"
+                        />
+                        <div
+                          class="activator waves-effect waves-light"
+                          style="
+                            position: absolute;
                             top: 0;
                             bottom: 0;
                             right: 0;
-                            left: 0;"></div></div><div class="card-content activator"><span class="card-title activator blue-light-text flex--justify-between"><h5>Conheça</h5></span></div><div class="card-reveal"><span class="card-title flex--justify-between flex--align-center"><h5>Ensino Fundamental: 6º ao 9º ano​</h5><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></span><p>LEGO® Education SPIKE Prime​</p><p>Possui diversos componentes, como viga, eixo, roda, engrenagem, barra dentada e elementos decorativos. Possui também os seguintes componentes eletrônicos: sensor de cor, sensor de toque, sensor ultrassônico e motor.</p><p>Permite que os estudantes construam modelos interativos usando linguagem de programação.​</p></div></div></div></div></div><!-- QR CODE --><div class="flex--justify-center flex--align-center mt-60"><img data-aos="fade-down" src="src/img/QRCODE-material.png" alt="+" loading="lazy" style="width: 100%; max-width: 120px" class="mr-24"><div><p>Para conhecer o material, acesse o QR CODE ao lado</p><p style="font-size: 14px">Acesso em: 12 abr. 2024.</p><p>Lembre-se de que os kits LEGO® não são exclusivos para as oficinas. Eles fazem parte dos equipamentos do SESITEC, e o professor pode utilizá-los em suas atividades conforme a disponibilidade.</p></div></div></div></div></section><!-- PLATAFORMAS EDUCACIONAIS ------------------------------------><section id="plataformas" class="bg-blue-04 pb-80" style="margin-bottom: -2px"><img src="src/img/plataformas-divider.png" alt="Seção" loading="lazy" style="margin-top: -4px" class="game-divisor pb-80"><div class="container--medium"><!-- Minecraft --><div class="minecraft"><div class="center-align mb-40"><h1 data-aos="fade-up">PLATAFORMAS EDUCACIONAIS</h1></div><div class="row"><div class="col m5 s12"></div><div class="col m7 s12"><h3 class="white-text mb-24-mobile">MINECRAFT</h3></div></div><div class="row"><div class="col m5 s12"><img src="src/img/static-04.png" alt="MINECRAFT" loading="lazy" style="width: 100%" class="mb-24"></div><div class="col m7 s12"><p class="yellow-l">O que é o Minecraft e como usá-lo em sala de aula?</p><p class="white-text">O Minecraft é um jogo que utiliza blocos para criar ou reproduzir ambientes de maneira lúdica e interativa. Os jogadores podem trabalhar individualmente ou em conjunto para construir mundos ricos de imaginação. O impacto do Minecraft vai além do entretenimento, influenciando a educação de mais de 120 países, com uma base de mais de 100 milhões de jogadores ao redor do mundo. </p></div></div><p class="white-text">A edição educacional do Minecraft (Minecraft Education Edition) leva essa atmosfera criativa e imersiva para as salas de aula ao redor do mundo, capacitando educadores a integrá-lo em estratégias de aprendizagem baseadas em jogos. Isso incentiva os alunos a criarem suas próprias narrativas, desenvolverem conceitos significativos e explorarem ambientes virtuais amplos. As oportunidades pedagógicas oferecidas por essa ferramenta são praticamente ilimitadas.</p><p class="white-text">Entre os recursos disponíveis estão o Modo Sala de Aula, que oferece aos professores maior controle sobre as atividades, lições e guias de ensino para diferentes níveis, ferramentas para documentar e submeter trabalhos, mecanismos de avaliação integrados e o Construtor de Código, que permite a programação dentro do jogo. Todas essas funcionalidades foram desenvolvidas para enriquecer o processo educacional, proporcionando uma experiência de aprendizado interativa e envolvente para os alunos.</p><p class="white-text">Além disso, a ferramenta promove o desenvolvimento de habilidades do século 21, como criatividade, comunicação, resolução de problemas e colaboração, preparando os alunos para os desafios do futuro.</p><!-- ACORDEON --><div class="row"><div class="col m6 s12"><ul class="collapsible collapsible--ate"><li><div class="collapsible-header box-attention waves-effect waves-light grow flex--justify-center flex--align-center"><p class="center-align"><b>Qual é a extensão das possibilidades que eles oferecem?</b></p></div><div class="collapsible-body box-attention"><div class="py-40"><p class="mt-0">A Minecraft Education Edition funciona essencialmente como uma versão virtual de blocos de montar, em que os jogadores têm a capacidade de construir uma variedade de estruturas.</p><p>Os jogadores podem coletar recursos, como madeira, pedra e outros materiais, explorando um cenário composto por blocos virtuais, dando forma às suas criações, que podem incluir desde castelos e parques de diversão até esconderijos subterrâneos e naves espaciais.</p><p>Além disso, os jogadores têm a oportunidade de criar acessórios para seus avatares, variando desde ferramentas, como pás, até equipamentos, como armaduras feitas de diamante.</p><img src="src/img/minecraft.webp" alt="minecraft" style="width: 100%"><p>Figura: Os jogadores usam itens guardados em seu inventário para construir, criar e sobreviver.</p></div></div></li></ul></div><div class="col m6 s12"><ul class="collapsible collapsible--ate"><li><div class="collapsible-header box-attention waves-effect waves-light grow flex--justify-center flex--align-center"><p class="center-align"><b>Como o ATE pode apoiar o uso do Minecraft em sala de aula?</b></p></div><div class="collapsible-body box-attention"><div class="py-40"><p class="mt-0">O ATE desempenha um papel fundamental no suporte ao uso do Minecraft Education Edition em sala de aula. Ele oferece apoio aos professores na criação, configuração e personalização de mundos e lições, orientando-os sobre as diversas funcionalidades da ferramenta, como o Modo Sala de Aula, as ferramentas de avaliação e o Construtor de Código.</p><p>Além disso, o ATE pode colaborar com os professores na elaboração de planos de aula que integrem o Minecraft em projetos e propostas pedagógicas, assegurando que as atividades estejam alinhadas tanto com as potencialidades da ferramenta quanto com os objetivos educacionais. O ATE também pode organizar workshops para capacitar os professores a utilizarem o software de maneira criativa e eficiente.</p><p>Durante as atividades, o ATE auxilia os alunos, garantindo que todos tenham acesso à ferramenta de forma segura e eficiente, além de apoiar na integração do Minecraft com plataformas de documentação e envio de trabalhos.</p><p>Com esse apoio, o ATE contribui para maximizar o potencial do Minecraft como uma ferramenta interativa e colaborativa.</p></div></div></li></ul></div></div></div><!-- Coderz --><div class="coderz mt-80"><h3 class="white-text">CODERZ</h3><div class="row"><div class="col m7 s12"><p class="white-text">A plataforma educacional CoderZ é uma ferramenta que está disponível para os professores de Matemática da Rede SESI.</p><p class="white-text">Voltada para o ensino de programação e matemática, adota a metodologia STEAM (Ciências, Tecnologia Engenharia, Artes e Matemática) e usa recursos gamificados com o objetivo de fomentar a educação tecnológica e preparar os jovens para os desafios futuro.</p><p class="white-text">Associada à robótica educacional, a plataforma proporciona simulações envolvendo robôs, permitindo que os alunos aprendam de forma prática e interativa.</p></div><div class="col m5 s12"><img src="src/img/static-03.png" alt="CODERZ" loading="lazy" style="width: 100%" class="mb-24"></div></div><p class="white-text">O CoderZ é acessado através de navegadores (Chrome, Firefox, Microsoft Edge) e oferece dois ambientes de edição de código: um visual, implementado por meio da ferramenta Blockly (programação em blocos), e outro textual, baseado na linguagem de programação Phyton.</p><!-- ACORDEON --><div class="row"><div class="col m6 s12"><ul class="collapsible collapsible--ate"><li><div class="collapsible-header box-attention waves-effect waves-light grow flex--justify-center flex--align-center"><p class="center-align"><b>Você sabe o que é o Guia do Professor?</b></p></div><div class="collapsible-body box-attention"><div class="py-40"><p class="mt-0">O acesso ao Guia do Professor correspondente a cada curso é feito clicando no cartão do curso, que é disponibilizado em formato de documento PDF. Esse documento pode ser visualizado diretamente no navegador ou baixado para armazenamento local no computador do usuário.</p><img src="src/img/coderz.webp" alt="Link para o guia do professor na plataforma CoderZ​" loading="lazy" style="width: 100%" class="mb-24"><p>Link para o guia do professor na plataforma CoderZ</p></div></div></li></ul></div><div class="col m6 s12"><ul class="collapsible collapsible--ate"><li><div class="collapsible-header box-attention waves-effect waves-light grow flex--justify-center flex--align-center"><p class="center-align"><b>Como o ATE pode apoiar o uso do CoderZ em sala de aula?</b></p></div><div class="collapsible-body box-attention"><div class="py-40"><p class="mt-0">O ATE desempenha um papel fundamental no suporte ao uso do CoderZ em sala de aula. Ele oferece assistência a professores e alunos, orientando-os sobre como navegar na plataforma e acessar os conteúdos de maneira eficiente.</p><p>Além disso, o ATE pode colaborar com os professores na elaboração de planos de aula que integrem o CoderZ em projetos e propostas pedagógicas, assegurando que as atividades estejam alinhadas com as potencialidades da ferramenta e os objetivos educacionais. O ATE também pode organizar workshops para familiarizar, capacitar e motivar os professores a utilizarem a ferramenta.</p><p>Com esse apoio, o ATE contribui para que o professor de matemática utilize o CoderZ de forma eficaz, enriquecendo a experiência de aprendizagem dos alunos e estimulando o interesse pela matemática.</p></div></div></li></ul></div></div></div><!-- Office --><div class="office mt-80"><div class="row"><div class="col m5 s12"></div><div class="col m7 s12"><h3 class="white-text mb-24-mobile">OFFICE 365</h3></div></div><div class="row"><div class="col m5 s12"><img src="src/img/static-02.png" alt="OFFICE 365" loading="lazy" style="width: 100%" class="mb-24"></div><div class="col m7 s12"><p class="yellow-l">O que é e como usá-lo em sala de aula?</p><p class="white-text">O Office 365 Educacional é uma versão do pacote de aplicativos Microsoft Office voltada especialmente para instituições de ensino, professores e alunos. Essa versão é oferecida gratuitamente aos alunos das escolas SESI, com o objetivo de facilitar o aprendizado e promover o trabalho colaborativo dentro do ambiente educacional.</p><p class="white-text">Os aplicativos incluídos no pacote Office 365 são: Word, Excel, PowerPoint, Outlook, OneDrive, Teams, SharePoint, OneNote, Forms, Sway, Skype, Planner, entre outros.</p></div></div><content-menu-02 class="my-40"></content-menu-02><div class="white-text"><p class="yellow-l">Como o ATE pode apoiar o uso do Office 365 Education em sala de aula?</p><p class="white-text">O ATE desempenha um papel essencial no suporte ao uso do Office 365 Education em sala de aula, oferecendo assistência em questões relacionadas ao funcionamento e à aplicação das ferramentas, além de orientar professores e alunos sobre as melhores práticas de segurança digital.</p><p class="white-text">Além disso, o ATE pode colaborar com os professores na elaboração de planos de aula que integrem os recursos do Office 365 em projetos e propostas pedagógicas, garantindo que as atividades estejam alinhadas com as potencialidades da ferramenta e os objetivos educacionais.</p><p class="white-text">O ATE também pode organizar workshops para apresentar e familiarizar os professores com os diversos recursos do Office 365, assegurando que eles estejam atualizados e confiantes no uso da plataforma. Esses treinamentos podem incluir demonstrações práticas e exemplos de como integrar as ferramentas nas aulas.</p><p class="white-text">Com esse suporte, o ATE garante que os professores utilizem o Office 365 Education para enriquecer a experiência de aprendizagem dos alunos, promovendo um ambiente colaborativo e inovador.</p></div></div></div></section><!-- PRÉ JOGO ------------------------------------><section id="missao" class="pb-80 pb-320 pb-240-mobile"><img src="src/img/plataformas-divider-b.png" alt="Seção" loading="lazy" style="margin-top: -4px" class="game-divisor pb-80"><div class="container--medium"><div class="center-align flex--justify-center"><div style="width: 100%; max-width: 560px"><h1 data-aos="fade-up">HORA DO DESAFIO</h1><p class="white-text">Para se inspirar, a professora de português pediu uma proposta de atividade do SESITEC que utilize a impressora 3D.</p><p class="white-text stop-navbar"><b>Você, ATE, precisará superar diversos obstáculos para levar a proposta até a professora.<br><br>Pronto?</b></p><img data-aos="fade-up" data-aos-duration="1000" src="src/img/Up.png" alt="Up" loading="lazy"></div></div></div></section><game-fase></game-fase><!-- Footer ---------------------------------- --><app-footer style="margin-top: -1px"></app-footer><!-- Modal 1--><div class="hystmodal" id="modal-1" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align p-24"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close.png" alt="Close" loading="lazy"></div></div><p>O ATE é responsável pela guarda e organização de todos os equipamentos do SESITEC.</p><p>Para garantir uma organização eficiente, os dispositivos precisam ser preparados e numerados. Uma maneira de fazer isso é classificá-los pelos gabinetes onde estão guardados. Por exemplo, se o notebook 1 está no gabinete 1, ele pode ser identificado com um adesivo ou etiqueta como “Gabinete 1 – Notebook 1”.</p><p>Também é fundamental manter um controle detalhado dos números de patrimônio de cada equipamento vinculado à numeração usada para organização, utilizando uma planilha on-line ou ferramenta semelhante. Isso ajuda em casos de empréstimo, troca ou até perda das identificações dos dispositivos.​ ​</p></div></div></div></div><!-- Fim Modal 1--><!-- Modal 2--><div class="hystmodal" id="modal-2" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align p-24"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close.png" alt="Close" loading="lazy"></div></div><p>O ATE, por meio de checagens regulares, deve garantir que os tablets, notebooks e celulares dos óculos VR estejam guardados nos gabinetes quando não estiverem em uso, além de estarem carregados, organizados, limpos e prontos para as atividades escolares. O carregamento deve ser feito de maneira adequada para não comprometer a vida útil da bateria e do equipamento.</p></div></div></div></div><!-- Fim Modal 2--><!-- Modal 3--><div class="hystmodal" id="modal-3" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align p-24"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close.png" alt="Close" loading="lazy"></div></div><p>Em caso de problemas técnicos com qualquer equipamento do SESITEC, o ATE é responsável por acionar o setor de TI da unidade para que realize a manutenção e/ou o reparo dos dispositivos, bem como por demandar a garantia, se for necessário. É importante lembrar que o ATE não possui autorização para realizar quaisquer instalações de softwares nos equipamentos do SESITEC.</p></div></div></div></div><!-- Fim Modal 3--><!-- Modal 4--><div class="hystmodal" id="modal-4" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align p-24"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close.png" alt="Close" loading="lazy"></div></div><p>O ATE também é responsável por gerenciar o agendamento dos equipamentos para empréstimo aos professores, para uso em aulas e projetos. ​ ​</p><p>Ao receber os equipamentos de volta, é necessário verificar se todos foram devolvidos e se estão em bom estado. Além disso, é fundamental informar sobre os procedimentos de agendamento, detalhando os prazos para as solicitações e fornecendo orientações sobre o manuseio correto dos equipamentos.</p></div></div></div></div><!-- Fim Modal 4--><!-- Modal Sala --------------- --><!-- Modal Sala 1--><div class="hystmodal hystmodal--large" id="modal-sala-1" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Braço Robótico</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><p>Os robôs colaborativos auxiliam os alunos na execução de diversas tarefas, permitindo que aprendam a trabalhar lado a lado com essas máquinas, construindo seu aprendizado científico e desenvolvendo o trabalho em equipe. O robô colaborativo é uma tecnologia chave para a Indústria 4.0, proporcionando aos alunos uma experiência prática com esse novo modelo industrial.</p></div></div></div></div></div><!-- Fim Modal Sala 1--><!-- Modal Sala 2--><div class="hystmodal hystmodal--large" id="modal-sala-2" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Impressora 3D</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><p>A impressora 3D é um equipamento que cria objetos físicos tridimensionais a partir de modelos digitais, funcionando por meio da adição de material camada por camada até que o objeto esteja completo.</p><p>Os materiais utilizados podem incluir plásticos, resinas, metais, entre outros. As impressoras 3D são amplamente empregadas em diversas áreas, como prototipagem rápida, fabricação, medicina, educação e design.</p><p>Esse equipamento auxilia no desenvolvimento de habilidades STEAM (Ciência, Tecnologia, Engenharia, Artes e Matemática), permitindo que os alunos criem modelos tridimensionais e incentivando o pensamento crítico e a resolução de problemas. Os projetos podem variar desde a criação de protótipos de engenharia até modelos científicos complexos.</p><p>A impressão 3D possibilita que os alunos transformem suas ideias em objetos físicos, proporcionando uma experiência de aprendizado mais concreta e tangível. Isso é especialmente útil em componentes curriculares como biologia, onde os alunos podem imprimir modelos de células ou órgãos.</p><p><b>A impressora 3D oferece diversas vantagens em seu uso no ambiente escolar, entre elas:</b></p><!-- collapsible --><ul class="collapsible expansable my-40"><li><div class="collapsible-header orange-text"><p><b>Estímulo à criatividade e inovação</b></p></div><div class="collapsible-body"><div class="py-24"><p>Os alunos podem projetar e criar seus próprios objetos, estimulando a criatividade e a inovação. Isso é benéfico não apenas para áreas como tecnologia e engenharia, mas também para artes e design.</p></div></div></li><li><div class="collapsible-header orange-text"><p><b>Interdisciplinaridade</b></p></div><div class="collapsible-body"><div class="py-24"><p>Projetos de impressão 3D frequentemente envolvem múltiplos componentes curriculares, ajudando os alunos a fazer conexões entre diferentes áreas do conhecimento. Por exemplo, um projeto pode combinar conceitos de geometria (matemática), física (propriedades dos materiais) e design (arte).</p></div></div></li><li><div class="collapsible-header orange-text"><p><b>Inclusão e personalização do aprendizado</b></p></div><div class="collapsible-body"><div class="py-24"><p>Impressoras 3D podem ser usadas para criar materiais didáticos personalizados, atendendo às necessidades específicas de diferentes alunos, incluindo aqueles com deficiências.</p></div></div></li><li><div class="collapsible-header orange-text"><p><b>Preparação para o futuro</b></p></div><div class="collapsible-body"><div class="py-24"><p>A familiarização com a tecnologia de impressão 3D prepara os alunos para o mercado de trabalho, no qual essas habilidades são cada vez mais valorizadas. Eles aprendem não apenas a utilizar a tecnologia, mas também a entender seus princípios e aplicações.</p></div></div></li></ul><p>O ATE é responsável pelo controle e pela operação da impressora 3D na escola. Além disso, ele deve monitorar o estoque dos materiais e insumos necessários para o uso. Quando houver necessidade de adquirir quaisquer materiais para funcionamento da impressora, o ATE deve comunicar à gerência e ao setor de compra para garantir a reposição contínua, mantendo a impressora disponível para as atividades pedagógicas da unidade.</p><p>É também função do ATE informar o setor de TI da escola sobre quaisquer alterações no funcionamento da impressora 3D. Os técnicos de TI da unidade serão responsáveis por realizar a manutenção e/ou atualizações do equipamento.</p></div></div></div></div></div><!-- Fim Modal Sala 2--><!-- Modal Sala 3--><div class="hystmodal hystmodal--large" id="modal-sala-3" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Labdisc</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><p>O Labdisc é um laboratório de ciências portátil e versátil, amplamente utilizado em escolas para enriquecer o ensino. Equipado com diversos sensores integrados, ele permite a realização de experimentos e a coleta de dados em tempo real de forma prática e interativa.</p><p>Além disso, o Labdisc promove uma aprendizagem mais dinâmica e envolvente, incentivando a curiosidade científica e a investigação. Os professores podem utilizar o equipamento para demonstrar princípios teóricos, realizar projetos experimentais e estimular discussões sobre fenômenos naturais, tornando o ensino de ciências mais interativo e eficaz.</p><p>O ATE deve garantir que os sensores estejam organizados junto aos seus respectivos dispositivos. Os Labdiscs devem ser carregados pontualmente após o uso, e seus sensores devem ser higienizados.</p><p>Recomenda-se utilizar o Labdisc em conjunto com um tablet ou notebook para uma melhor visualização dos dados mensurados nas atividades. O ATE deve enviar os relatórios ("logs") gerados pelos equipamentos durante as atividades em sala de aula para os professores, caso seja necessário. Para isso, é possível usar o tablet ou o computador, por meio do software Globilab.</p></div></div></div></div></div><!-- Fim Modal Sala 3--><!-- Modal Sala 4--><div class="hystmodal hystmodal--large" id="modal-sala-4" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Óculos de Realidade Virtual</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><p>A realidade virtual proporciona uma experiência imersiva, transportando o usuário para novos contextos.</p><p>Ela permite que os alunos explorem lugares, realizem experimentos científicos ou participem de simulações, tornando o aprendizado mais interativo, motivador e dinâmico.</p><p>Essa solução educacional não apenas enriquece o conteúdo de estudo, mas também serve como uma poderosa ferramenta para os professores promoverem o engajamento e o interesse dos alunos.</p><p>Para utilizar esse recurso, que inclui celular e óculos de realidade virtual (VR), o ATE deve:</p><ul><li>verificar se os celulares solicitados estão carregados;</li><li>solicitar que o professor envie previamente o material a ser utilizado (vídeo, link, aplicativo, etc.), para que seja testado nos óculos e, se necessário, acionar o setor de TI para a instalação ou verificação da origem do conteúdo;</li><li>criar uma lista de reprodução para facilitar o acesso aos conteúdos e desativar a reprodução automática, caso o material utilize vídeos do YouTube;</li><li>garantir que os óculos estejam devidamente ajustados à cabeça dos alunos durante o uso em sala de aula.</li></ul><p>O ATE não é responsável por realizar a instalação e atualização de softwares nos equipamentos. É importante alinhar com o setor de TI da unidade para que os celulares sejam atualizados periodicamente, além de desabilitar as atualizações automáticas, a fim de evitar interrupções durante o uso em sala de aula.</p><p>Caso sejam detectados aplicativos não autorizados nos dispositivos, o ATE deve acionar o setor de TI para solicitar a desinstalação.</p><div class="box-attention box-attention--02 flex--justify-between flex--align-center p-16 px-0" style="flex-wrap: wrap;"><div class="flex--align-center"><p><b>Ambientes óculos VR</b></p></div><a href="#" class="btn btn-game btn-game--gray" @click="review($event, 'review-01')">Clique aqui e conheça os ambientes</a></div><img src="src/img/TEMPLATE_SESITEC_oculos.png" alt="Ambientes" loading="lazy" style="width: 100%" class="mt-24 review-01 scale-transition scale-out"><p>Foram selecionados conteúdos de diversas áreas do conhecimento e desenvolvidos 12 ambientes com base nas habilidades descritas na BNCC.</p><p>A partir da imersão nos ambientes, os estudantes recebem a orientação do professor para participar de momentos históricos e inacessíveis, aprendendo de forma enriquecedora por meio dessa experiência.</p><p>É importante que o ATE se familiarize com os ambientes disponíveis no aplicativo, os documentos de cada ambiente e o manual de uso, para que possa orientar os professores sobre a utilização e as potencialidades desse recurso.</p><hr><br><div class="flex--align-center flex--justify-between"><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p><b>Para mais informações sobre os Ambientes Virtuais, acesse o QR Code.</b></p></div><img src="src/img/qr-modal.webp" alt="QR CODE" loading="lazy" style="width: 100%; max-width: 80px" class="mb-24"></div></div></div></div></div></div><!-- Fim Modal Sala 4--><!-- Modal Sala 5--><div class="hystmodal hystmodal--large" id="modal-sala-5" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Tablets</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><p>Os tablets são como um laboratório de informática itinerante, com recursos multimídia que possibilitam pesquisas, imersões e atividades com resultados instantâneos.</p><p>Quando utilizados com intencionalidade pedagógica, os tablets podem transformar a sala de aula em um ambiente de aprendizagem mais interativo, colaborativo e eficaz.</p><p>Eles incentivam a interatividade e facilitam o acesso a recursos digitais, como e-books, vídeos e quizzes, tornando a aprendizagem mais envolvente e significativa.</p><p>Com os tablets, é possível realizar pesquisas para aprofundar o conhecimento, além de criar conteúdos digitais, desenvolvendo habilidades de comunicação e criatividade.</p><p>Essa ferramenta também promove a inclusão de alunos com necessidades especiais, oferecendo recursos de acessibilidade.</p><p><b>Para conservar a vida útil da bateria dos tablets, devem-se seguir os seguintes cuidados:</b></p><!-- collapsible --><ul class="collapsible expansable my-40"><li><div class="collapsible-header orange-text"><p><b>Evite o superaquecimento</b></p></div><div class="collapsible-body"><div class="py-24"><p>Uma das principais causas do estufamento da bateria é o superaquecimento. Evite expor os tablets a altas temperaturas, como deixá-los sob luz solar direta ou próximo a fontes de calor. Além disso, não os utilize enquanto estiverem carregando, pois isso pode aumentar a temperatura da bateria.</p></div></div></li><li><div class="collapsible-header orange-text"><p><b>Carregue corretamente</b></p></div><div class="collapsible-body"><div class="py-24"><p>Evite carregar a bateria até 100% ou deixá-la descarregar completamente. O ideal é manter a carga entre 20% e 80%. Utilize o carregador original do dispositivo ou um carregador de terceiros certificado. Considere desativar o carregamento rápido, pois ele pode gerar mais calor. Deixar carrinhos cheios de tablets carregando durante toda a noite também aumenta a temperatura das baterias.</p></div></div></li><li><div class="collapsible-header orange-text"><p><b>Armazenamento adequado</b></p></div><div class="collapsible-body"><div class="py-24"><p>Se não for utilizar os tablets por um longo período, armazene-os com cerca de 50% de carga. Evite deixá-los completamente descarregados por muito tempo.</p></div></div></li><li><div class="collapsible-header orange-text"><p><b>Atualize o software</b></p></div><div class="collapsible-body"><div class="py-24"><p>Mantenha o sistema operacional e os aplicativos atualizados, pois as atualizações podem incluir otimizações para a bateria – responsabilidade do técnico de TI.</p></div></div></li><li><div class="collapsible-header orange-text"><p><b>Proteja a bateria</b></p></div><div class="collapsible-body"><div class="py-24"><p>Alguns dispositivos possuem o recurso “Proteger a bateria”. Ative esse recurso para limitar a carga da bateria entre 20% e 80%, prolongando assim sua vida útil – responsabilidade do técnico de TI.</p></div></div></li></ul></div></div></div></div></div><!-- Fim Modal Sala 5--><!-- Modal Sala 6--><div class="hystmodal hystmodal--large" id="modal-sala-6" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Kits de robótica</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><p>As escolas possuem diversos kits de robótica do LEGO® Education, cuja disponibilidade varia de acordo com os anos escolares atendidos em cada unidade.</p><p>Esses kits fazem parte dos equipamentos do SESITEC e são ferramentas poderosas para enriquecer a aprendizagem dos alunos, oferecendo uma série de benefícios educacionais.</p><p>Ao usar os kits de robótica, os estudantes têm a oportunidade de vivenciar o processo de criação e gerenciamento de projetos, indo além da simples aprendizagem técnica. Eles favorecem o desenvolvimento de habilidades essenciais, como resolução de problemas, pensamento crítico, colaboração e criatividade. Além disso, incentivam uma aprendizagem prática, intuitiva e inclusiva, em que os alunos aplicam os conceitos aprendidos, tornando a experiência mais dinâmica e envolvente.</p><p>O ATE é responsável pela organização e preparação dos kits de robótica para uso. Se o kit incluir hubs (como LEGO® Education SPIKE Prime ou LEGO® Education SPIKE Essential), é necessário garantir que estejam carregados antes das aulas. A organização dos kits também faz parte do processo educativo, e os alunos são incentivados pelos professores a mantê-los organizados durante o uso.</p><p>É recomendado que o ATE revise periodicamente os kits, verificando peças, testando motores e hubs. Caso seja necessário fazer reposições, é função do ATE encaminhar o código e a quantidade de peças que precisam ser repostas para a gerência da unidade. Recomenda-se o uso do site Brick Owl para consulta dos códigos identificadores de cada peça.</p></div></div></div></div></div><!-- Fim Modal Sala 6--><!-- Modal Sala 7--><div class="hystmodal hystmodal--large" id="modal-sala-7" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Streaming Media Player</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><p>O Streaming Media Player é uma ferramenta tecnológica utilizada nas escolas para facilitar a projeção de conteúdo digital nas salas de aula. Esse dispositivo de streaming permite que professores e alunos transmitam facilmente vídeos, apresentações, páginas da web e outros materiais didáticos diretamente de um smartphone ou tablet para uma tela maior, como uma TV ou projetor.</p><p>O ATE deve garantir que os Streaming Media Player estejam prontos para uso em sala de aula, devidamente conectados ao projetor ou à TV.</p></div></div></div></div></div><!-- Fim Modal Sala 7--><!-- Modal Sala 8--><div class="hystmodal hystmodal--large" id="modal-sala-8" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Miniestúdio</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><p>O estúdio, equipado com câmera, tripé e chromakey (fundo verde), é utilizado para enriquecer o processo de ensino, proporcionando uma experiência de aprendizagem mais envolvente e criativa.</p><p>O miniestúdio pode ser utilizado de diversas maneiras nas atividades escolares. Professores e alunos podem criar podcasts e vídeos que explicam conceitos complexos de forma visualmente atrativa, além de desenvolver projetos multidisciplinares.</p><p>A tecnologia chromakey permite substituir o fundo verde por qualquer imagem ou vídeo, tornando as aulas mais dinâmicas e interativas.</p><p>Esse equipamento contribui para o aprimoramento das habilidades de comunicação e apresentação, além de estimular a criatividade. Ele permite que os alunos criem histórias, notícias e documentários enquanto aprendem sobre produção e edição de vídeo.</p><p>O uso dessas tecnologias aumenta o engajamento dos alunos, motivando-os a participar mais ativamente das atividades escolares.</p><!-- collapsible --><ul class="collapsible expansable my-40"><li><div class="collapsible-header orange-text"><p><b>Cuidados com a câmera do miniestúdio</b></p></div><div class="collapsible-body"><div class="py-24"><ul><li>a câmera deve ser guardada em um local seguro, com a lente devidamente tampada para evitar arranhões;</li><li>as fotos e os vídeos devem ser enviados o mais rápido possível aos responsáveis pelas atividades, a fim de evitar que o cartão de memória fique sem espaço;</li><li>a bateria da câmera deve ser recarregada após cada atividade que a utilize;</li><li>caso a câmera seja utilizada com o tripé, é necessário verificar se o encaixe está firme para evitar quedas do equipamento.</li></ul></div></div></li><li><div class="collapsible-header orange-text"><p><b>Utilização da câmera durante as atividades escolares</b></p></div><div class="collapsible-body"><div class="py-24"><ul><li>manter a câmera no modo de foco automático ("AF");</li><li>ativar o estabilizador (“stabilizer”);</li><li>caso utilize os recursos de chromakey, enquadrar a pessoa ou o objeto totalmente dentro da área do fundo verde;</li><li>para filmagens, configurar a qualidade para Full HD – 60 fps, uma vez que gravações em 4K geram arquivos excessivamente grandes, dificultando o compartilhamento e a edição.</li></ul></div></div></li></ul></div></div></div></div></div><!-- Fim Modal Sala 8--><!-- Modal Sala 9--><div class="hystmodal hystmodal--large" id="modal-sala-9" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Notebooks</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><p>No SESITEC, temos notebooks disponíveis para o desenvolvimento de projetos educacionais que envolvem plataformas não suportadas pelos tablets, como o Minecraft Education, softwares de modelagem 3D e trabalhos que exigem digitação nos softwares da Microsoft 365.</p><p>Esses equipamentos oferecem flexibilidade e recursos para atividades mais avançadas, permitindo o uso de uma gama maior de softwares. São ideais para tarefas como produção textual, criação de apresentações e utilização de softwares mais robustos.</p><p>Os notebooks do SESITEC funcionam como um laboratório móvel, devendo ser levados até os alunos nos diferentes ambientes de aprendizagem da escola. Por esse motivo, esses equipamentos não devem ser fixados nas salas de aula, nem direcionados exclusivamente para uma única atividade ou projeto.</p></div></div></div></div></div><!-- Fim Modal Sala 9--><!-- Modal Sala 10--><div class="hystmodal hystmodal--large" id="modal-sala-10" aria-hidden="true"><div class="hystmodal__wrap"><div class="container--medium" role="dialog" aria-modal="true"><!-- BOX MODAL --><div class="box-attention left-align"><div class="hystmodal-header p-24 p-16-mobile"><div class="flex--align-center flex--justify-between"><p class="m-0"></p><div><img data-hystclose class="modal-close pointer" src="src/img/close-light.svg" alt="Close" loading="lazy"></div></div><div><div class="tag white-text">EQUIPAMENTOS SESITEC</div><p class="white-text mb-0"><b>Atividades SESITEC</b></p></div></div><div class="hystmodal-body p-24 p-16-mobile"><div class="box-attention box-attention--02 flex--justify-between flex--align-center p-16 px-0" style="flex-wrap: wrap;"><div class="flex--align-center"><p><b>Propostas de atividades SESITEC</b></p></div><a href="https://fiemg.sharepoint.com/:f:/s/NITE/EuFxk3IZRzBBmBOmlLuPqf0BqUTl_c6emGSHB_PpwdHZDw?e=FilGLX" target="_blank" class="btn btn-game btn-game--gray">Clique aqui e conheça</a></div><p>Baseadas na Base Nacional Comum Curricular (BNCC), as propostas de atividades foram elaboradas por um grupo multidisciplinar de professores da rede.</p><p>O material contém atividades para diversos componentes curriculares, utilizando os recursos do SESITEC com um propósito pedagógico bem definido, promovendo melhorias significativas no processo de ensino-aprendizagem.</p><p>É fundamental que o ATE se familiarize com as propostas disponíveis, para que possa realizar uma curadoria adequada e orientar os professores conforme o planejamento de suas aulas.</p></div></div></div></div></div><!-- Fim Modal Sala 10--></div></div></body></html>
+                            left: 0;
+                          "
+                        ></div>
+                      </div>
+                      <div class="card-content activator">
+                        <span
+                          class="card-title activator blue-light-text flex--justify-between"
+                          ><h5>Conheça</h5></span
+                        >
+                      </div>
+                      <div class="card-reveal">
+                        <span
+                          class="card-title flex--justify-between flex--align-center"
+                          ><h5>Ensino Fundamental: 6º ao 9º ano​</h5>
+                          <img
+                            data-hystclose
+                            class="modal-close pointer"
+                            src="src/img/close-light.svg"
+                            alt="Close"
+                            loading="lazy"
+                        /></span>
+                        <p>LEGO® Education SPIKE Prime​</p>
+                        <p>
+                          Possui diversos componentes, como viga, eixo, roda,
+                          engrenagem, barra dentada e elementos decorativos.
+                          Possui também os seguintes componentes eletrônicos:
+                          sensor de cor, sensor de toque, sensor ultrassônico e
+                          motor.
+                        </p>
+                        <p>
+                          Permite que os estudantes construam modelos
+                          interativos usando linguagem de programação.​
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- QR CODE -->
+              <div class="flex--justify-center flex--align-center mt-60">
+                <img
+                  data-aos="fade-down"
+                  src="src/img/QRCODE-material.png"
+                  alt="+"
+                  loading="lazy"
+                  style="width: 100%; max-width: 120px"
+                  class="mr-24"
+                />
+                <div>
+                  <p>Para conhecer o material, acesse o QR CODE ao lado</p>
+                  <p style="font-size: 14px">Acesso em: 12 abr. 2024.</p>
+                  <p>
+                    Lembre-se de que os kits LEGO® não são exclusivos para as
+                    oficinas. Eles fazem parte dos equipamentos do SESITEC, e o
+                    professor pode utilizá-los em suas atividades conforme a
+                    disponibilidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PLATAFORMAS EDUCACIONAIS ------------------------------------>
+        <section
+          id="plataformas"
+          class="bg-blue-04 pb-80"
+          style="margin-bottom: -2px"
+        >
+          <img
+            src="src/img/plataformas-divider.png"
+            alt="Seção"
+            loading="lazy"
+            style="margin-top: -4px"
+            class="game-divisor pb-80"
+          />
+          <div class="container--medium">
+            <!-- Minecraft -->
+            <div class="minecraft">
+              <div class="center-align mb-40">
+                <h1 data-aos="fade-up">PLATAFORMAS EDUCACIONAIS</h1>
+              </div>
+              <div class="row">
+                <div class="col m5 s12"></div>
+                <div class="col m7 s12">
+                  <h3 class="white-text mb-24-mobile">MINECRAFT</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m5 s12">
+                  <img
+                    src="src/img/static-04.png"
+                    alt="MINECRAFT"
+                    loading="lazy"
+                    style="width: 100%"
+                    class="mb-24"
+                  />
+                </div>
+                <div class="col m7 s12">
+                  <p class="yellow-l">
+                    O que é o Minecraft e como usá-lo em sala de aula?
+                  </p>
+                  <p class="white-text">
+                    O Minecraft é um jogo que utiliza blocos para criar ou
+                    reproduzir ambientes de maneira lúdica e interativa. Os
+                    jogadores podem trabalhar individualmente ou em conjunto
+                    para construir mundos ricos de imaginação. O impacto do
+                    Minecraft vai além do entretenimento, influenciando a
+                    educação de mais de 120 países, com uma base de mais de 100
+                    milhões de jogadores ao redor do mundo. 
+                  </p>
+                </div>
+              </div>
+              <p class="white-text">
+                A edição educacional do Minecraft (Minecraft Education Edition)
+                leva essa atmosfera criativa e imersiva para as salas de aula ao
+                redor do mundo, capacitando educadores a integrá-lo em
+                estratégias de aprendizagem baseadas em jogos. Isso incentiva os
+                alunos a criarem suas próprias narrativas, desenvolverem
+                conceitos significativos e explorarem ambientes virtuais amplos.
+                As oportunidades pedagógicas oferecidas por essa ferramenta são
+                praticamente ilimitadas.
+              </p>
+              <p class="white-text">
+                Entre os recursos disponíveis estão o Modo Sala de Aula, que
+                oferece aos professores maior controle sobre as atividades,
+                lições e guias de ensino para diferentes níveis, ferramentas
+                para documentar e submeter trabalhos, mecanismos de avaliação
+                integrados e o Construtor de Código, que permite a programação
+                dentro do jogo. Todas essas funcionalidades foram desenvolvidas
+                para enriquecer o processo educacional, proporcionando uma
+                experiência de aprendizado interativa e envolvente para os
+                alunos.
+              </p>
+              <p class="white-text">
+                Além disso, a ferramenta promove o desenvolvimento de
+                habilidades do século 21, como criatividade, comunicação,
+                resolução de problemas e colaboração, preparando os alunos para
+                os desafios do futuro.
+              </p>
+              <!-- ACORDEON -->
+              <div class="row">
+                <div class="col m6 s12">
+                  <ul class="collapsible collapsible--ate">
+                    <li>
+                      <div
+                        class="collapsible-header box-attention waves-effect waves-light grow flex--justify-center flex--align-center"
+                      >
+                        <p class="center-align">
+                          <b
+                            >Qual é a extensão das possibilidades que eles
+                            oferecem?</b
+                          >
+                        </p>
+                      </div>
+                      <div class="collapsible-body box-attention">
+                        <div class="py-40">
+                          <p class="mt-0">
+                            A Minecraft Education Edition funciona
+                            essencialmente como uma versão virtual de blocos de
+                            montar, em que os jogadores têm a capacidade de
+                            construir uma variedade de estruturas.
+                          </p>
+                          <p>
+                            Os jogadores podem coletar recursos, como madeira,
+                            pedra e outros materiais, explorando um cenário
+                            composto por blocos virtuais, dando forma às suas
+                            criações, que podem incluir desde castelos e parques
+                            de diversão até esconderijos subterrâneos e naves
+                            espaciais.
+                          </p>
+                          <p>
+                            Além disso, os jogadores têm a oportunidade de criar
+                            acessórios para seus avatares, variando desde
+                            ferramentas, como pás, até equipamentos, como
+                            armaduras feitas de diamante.
+                          </p>
+                          <img
+                            src="src/img/minecraft.webp"
+                            alt="minecraft"
+                            style="width: 100%"
+                          />
+                          <p>
+                            Figura: Os jogadores usam itens guardados em seu
+                            inventário para construir, criar e sobreviver.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col m6 s12">
+                  <ul class="collapsible collapsible--ate">
+                    <li>
+                      <div
+                        class="collapsible-header box-attention waves-effect waves-light grow flex--justify-center flex--align-center"
+                      >
+                        <p class="center-align">
+                          <b
+                            >Como o ATE pode apoiar o uso do Minecraft em sala
+                            de aula?</b
+                          >
+                        </p>
+                      </div>
+                      <div class="collapsible-body box-attention">
+                        <div class="py-40">
+                          <p class="mt-0">
+                            O ATE desempenha um papel fundamental no suporte ao
+                            uso do Minecraft Education Edition em sala de aula.
+                            Ele oferece apoio aos professores na criação,
+                            configuração e personalização de mundos e lições,
+                            orientando-os sobre as diversas funcionalidades da
+                            ferramenta, como o Modo Sala de Aula, as ferramentas
+                            de avaliação e o Construtor de Código.
+                          </p>
+                          <p>
+                            Além disso, o ATE pode colaborar com os professores
+                            na elaboração de planos de aula que integrem o
+                            Minecraft em projetos e propostas pedagógicas,
+                            assegurando que as atividades estejam alinhadas
+                            tanto com as potencialidades da ferramenta quanto
+                            com os objetivos educacionais. O ATE também pode
+                            organizar workshops para capacitar os professores a
+                            utilizarem o software de maneira criativa e
+                            eficiente.
+                          </p>
+                          <p>
+                            Durante as atividades, o ATE auxilia os alunos,
+                            garantindo que todos tenham acesso à ferramenta de
+                            forma segura e eficiente, além de apoiar na
+                            integração do Minecraft com plataformas de
+                            documentação e envio de trabalhos.
+                          </p>
+                          <p>
+                            Com esse apoio, o ATE contribui para maximizar o
+                            potencial do Minecraft como uma ferramenta
+                            interativa e colaborativa.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Coderz -->
+            <div class="coderz mt-80">
+              <h3 class="white-text">CODERZ</h3>
+              <div class="row">
+                <div class="col m7 s12">
+                  <p class="white-text">
+                    A plataforma educacional CoderZ é uma ferramenta que está
+                    disponível para os professores de Matemática da Rede SESI.
+                  </p>
+                  <p class="white-text">
+                    Voltada para o ensino de programação e matemática, adota a
+                    metodologia STEAM (Ciências, Tecnologia Engenharia, Artes e
+                    Matemática) e usa recursos gamificados com o objetivo de
+                    fomentar a educação tecnológica e preparar os jovens para os
+                    desafios futuro.
+                  </p>
+                  <p class="white-text">
+                    Associada à robótica educacional, a plataforma proporciona
+                    simulações envolvendo robôs, permitindo que os alunos
+                    aprendam de forma prática e interativa.
+                  </p>
+                </div>
+                <div class="col m5 s12">
+                  <img
+                    src="src/img/static-03.png"
+                    alt="CODERZ"
+                    loading="lazy"
+                    style="width: 100%"
+                    class="mb-24"
+                  />
+                </div>
+              </div>
+              <p class="white-text">
+                O CoderZ é acessado através de navegadores (Chrome, Firefox,
+                Microsoft Edge) e oferece dois ambientes de edição de código: um
+                visual, implementado por meio da ferramenta Blockly (programação
+                em blocos), e outro textual, baseado na linguagem de programação
+                Phyton.
+              </p>
+              <!-- ACORDEON -->
+              <div class="row">
+                <div class="col m6 s12">
+                  <ul class="collapsible collapsible--ate">
+                    <li>
+                      <div
+                        class="collapsible-header box-attention waves-effect waves-light grow flex--justify-center flex--align-center"
+                      >
+                        <p class="center-align">
+                          <b>Você sabe o que é o Guia do Professor?</b>
+                        </p>
+                      </div>
+                      <div class="collapsible-body box-attention">
+                        <div class="py-40">
+                          <p class="mt-0">
+                            O acesso ao Guia do Professor correspondente a cada
+                            curso é feito clicando no cartão do curso, que é
+                            disponibilizado em formato de documento PDF. Esse
+                            documento pode ser visualizado diretamente no
+                            navegador ou baixado para armazenamento local no
+                            computador do usuário.
+                          </p>
+                          <img
+                            src="src/img/coderz.webp"
+                            alt="Link para o guia do professor na plataforma CoderZ​"
+                            loading="lazy"
+                            style="width: 100%"
+                            class="mb-24"
+                          />
+                          <p>
+                            Link para o guia do professor na plataforma CoderZ
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col m6 s12">
+                  <ul class="collapsible collapsible--ate">
+                    <li>
+                      <div
+                        class="collapsible-header box-attention waves-effect waves-light grow flex--justify-center flex--align-center"
+                      >
+                        <p class="center-align">
+                          <b
+                            >Como o ATE pode apoiar o uso do CoderZ em sala de
+                            aula?</b
+                          >
+                        </p>
+                      </div>
+                      <div class="collapsible-body box-attention">
+                        <div class="py-40">
+                          <p class="mt-0">
+                            O ATE desempenha um papel fundamental no suporte ao
+                            uso do CoderZ em sala de aula. Ele oferece
+                            assistência a professores e alunos, orientando-os
+                            sobre como navegar na plataforma e acessar os
+                            conteúdos de maneira eficiente.
+                          </p>
+                          <p>
+                            Além disso, o ATE pode colaborar com os professores
+                            na elaboração de planos de aula que integrem o
+                            CoderZ em projetos e propostas pedagógicas,
+                            assegurando que as atividades estejam alinhadas com
+                            as potencialidades da ferramenta e os objetivos
+                            educacionais. O ATE também pode organizar workshops
+                            para familiarizar, capacitar e motivar os
+                            professores a utilizarem a ferramenta.
+                          </p>
+                          <p>
+                            Com esse apoio, o ATE contribui para que o professor
+                            de matemática utilize o CoderZ de forma eficaz,
+                            enriquecendo a experiência de aprendizagem dos
+                            alunos e estimulando o interesse pela matemática.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Office -->
+            <div class="office mt-80">
+              <div class="row">
+                <div class="col m5 s12"></div>
+                <div class="col m7 s12">
+                  <h3 class="white-text mb-24-mobile">OFFICE 365</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m5 s12">
+                  <img
+                    src="src/img/static-02.png"
+                    alt="OFFICE 365"
+                    loading="lazy"
+                    style="width: 100%"
+                    class="mb-24"
+                  />
+                </div>
+                <div class="col m7 s12">
+                  <p class="yellow-l">O que é e como usá-lo em sala de aula?</p>
+                  <p class="white-text">
+                    O Office 365 Educacional é uma versão do pacote de
+                    aplicativos Microsoft Office voltada especialmente para
+                    instituições de ensino, professores e alunos. Essa versão é
+                    oferecida gratuitamente aos alunos das escolas SESI, com o
+                    objetivo de facilitar o aprendizado e promover o trabalho
+                    colaborativo dentro do ambiente educacional.
+                  </p>
+                  <p class="white-text">
+                    Os aplicativos incluídos no pacote Office 365 são: Word,
+                    Excel, PowerPoint, Outlook, OneDrive, Teams, SharePoint,
+                    OneNote, Forms, Sway, Skype, Planner, entre outros.
+                  </p>
+                </div>
+              </div>
+              <content-menu-02 class="my-40"></content-menu-02>
+              <div class="white-text">
+                <p class="yellow-l">
+                  Como o ATE pode apoiar o uso do Office 365 Education em sala
+                  de aula?
+                </p>
+                <p class="white-text">
+                  O ATE desempenha um papel essencial no suporte ao uso do
+                  Office 365 Education em sala de aula, oferecendo assistência
+                  em questões relacionadas ao funcionamento e à aplicação das
+                  ferramentas, além de orientar professores e alunos sobre as
+                  melhores práticas de segurança digital.
+                </p>
+                <p class="white-text">
+                  Além disso, o ATE pode colaborar com os professores na
+                  elaboração de planos de aula que integrem os recursos do
+                  Office 365 em projetos e propostas pedagógicas, garantindo que
+                  as atividades estejam alinhadas com as potencialidades da
+                  ferramenta e os objetivos educacionais.
+                </p>
+                <p class="white-text">
+                  O ATE também pode organizar workshops para apresentar e
+                  familiarizar os professores com os diversos recursos do Office
+                  365, assegurando que eles estejam atualizados e confiantes no
+                  uso da plataforma. Esses treinamentos podem incluir
+                  demonstrações práticas e exemplos de como integrar as
+                  ferramentas nas aulas.
+                </p>
+                <p class="white-text">
+                  Com esse suporte, o ATE garante que os professores utilizem o
+                  Office 365 Education para enriquecer a experiência de
+                  aprendizagem dos alunos, promovendo um ambiente colaborativo e
+                  inovador.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PRÉ JOGO ------------------------------------>
+        <section id="missao" class="pb-80 pb-320 pb-240-mobile">
+          <img
+            src="src/img/plataformas-divider-b.png"
+            alt="Seção"
+            loading="lazy"
+            style="margin-top: -4px"
+            class="game-divisor pb-80"
+          />
+          <div class="container--medium">
+            <div class="center-align flex--justify-center">
+              <div style="width: 100%; max-width: 560px">
+                <h1 data-aos="fade-up">HORA DO DESAFIO</h1>
+                <p class="white-text">
+                  Para se inspirar, a professora de português pediu uma proposta
+                  de atividade do SESITEC que utilize a impressora 3D.
+                </p>
+                <p class="white-text stop-navbar">
+                  <b
+                    >Você, ATE, precisará superar diversos obstáculos para levar
+                    a proposta até a professora.<br /><br />Pronto?</b
+                  >
+                </p>
+                <img
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  src="src/img/Up.png"
+                  alt="Up"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <game-fase></game-fase
+        ><!-- Footer ---------------------------------- --><app-footer
+          style="margin-top: -1px"
+        ></app-footer
+        ><!-- Modal 1-->
+        <div class="hystmodal" id="modal-1" aria-hidden="true">
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align p-24">
+                <div class="flex--align-center flex--justify-between">
+                  <p class="m-0"></p>
+                  <div>
+                    <img
+                      data-hystclose
+                      class="modal-close pointer"
+                      src="src/img/close.png"
+                      alt="Close"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <p>
+                  O ATE é responsável pela guarda e organização de todos os
+                  equipamentos do SESITEC.
+                </p>
+                <p>
+                  Para garantir uma organização eficiente, os dispositivos
+                  precisam ser preparados e numerados. Uma maneira de fazer isso
+                  é classificá-los pelos gabinetes onde estão guardados. Por
+                  exemplo, se o notebook 1 está no gabinete 1, ele pode ser
+                  identificado com um adesivo ou etiqueta como “Gabinete 1 –
+                  Notebook 1”.
+                </p>
+                <p>
+                  Também é fundamental manter um controle detalhado dos números
+                  de patrimônio de cada equipamento vinculado à numeração usada
+                  para organização, utilizando uma planilha on-line ou
+                  ferramenta semelhante. Isso ajuda em casos de empréstimo,
+                  troca ou até perda das identificações dos dispositivos.​ ​
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal 1--><!-- Modal 2-->
+        <div class="hystmodal" id="modal-2" aria-hidden="true">
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align p-24">
+                <div class="flex--align-center flex--justify-between">
+                  <p class="m-0"></p>
+                  <div>
+                    <img
+                      data-hystclose
+                      class="modal-close pointer"
+                      src="src/img/close.png"
+                      alt="Close"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <p>
+                  O ATE, por meio de checagens regulares, deve garantir que os
+                  tablets, notebooks e celulares dos óculos VR estejam guardados
+                  nos gabinetes quando não estiverem em uso, além de estarem
+                  carregados, organizados, limpos e prontos para as atividades
+                  escolares. O carregamento deve ser feito de maneira adequada
+                  para não comprometer a vida útil da bateria e do equipamento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal 2--><!-- Modal 3-->
+        <div class="hystmodal" id="modal-3" aria-hidden="true">
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align p-24">
+                <div class="flex--align-center flex--justify-between">
+                  <p class="m-0"></p>
+                  <div>
+                    <img
+                      data-hystclose
+                      class="modal-close pointer"
+                      src="src/img/close.png"
+                      alt="Close"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <p>
+                  Em caso de problemas técnicos com qualquer equipamento do
+                  SESITEC, o ATE é responsável por acionar o setor de TI da
+                  unidade para que realize a manutenção e/ou o reparo dos
+                  dispositivos, bem como por demandar a garantia, se for
+                  necessário. É importante lembrar que o ATE não possui
+                  autorização para realizar quaisquer instalações de softwares
+                  nos equipamentos do SESITEC.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal 3--><!-- Modal 4-->
+        <div class="hystmodal" id="modal-4" aria-hidden="true">
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align p-24">
+                <div class="flex--align-center flex--justify-between">
+                  <p class="m-0"></p>
+                  <div>
+                    <img
+                      data-hystclose
+                      class="modal-close pointer"
+                      src="src/img/close.png"
+                      alt="Close"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <p>
+                  O ATE também é responsável por gerenciar o agendamento dos
+                  equipamentos para empréstimo aos professores, para uso em
+                  aulas e projetos. ​ ​
+                </p>
+                <p>
+                  Ao receber os equipamentos de volta, é necessário verificar se
+                  todos foram devolvidos e se estão em bom estado. Além disso, é
+                  fundamental informar sobre os procedimentos de agendamento,
+                  detalhando os prazos para as solicitações e fornecendo
+                  orientações sobre o manuseio correto dos equipamentos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal 4--><!-- Modal Sala --------------- --><!-- Modal Sala 1-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-1"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Braço Robótico</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <p>
+                    Os robôs colaborativos auxiliam os alunos na execução de
+                    diversas tarefas, permitindo que aprendam a trabalhar lado a
+                    lado com essas máquinas, construindo seu aprendizado
+                    científico e desenvolvendo o trabalho em equipe. O robô
+                    colaborativo é uma tecnologia chave para a Indústria 4.0,
+                    proporcionando aos alunos uma experiência prática com esse
+                    novo modelo industrial.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 1--><!-- Modal Sala 2-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-2"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Impressora 3D</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <p>
+                    A impressora 3D é um equipamento que cria objetos físicos
+                    tridimensionais a partir de modelos digitais, funcionando
+                    por meio da adição de material camada por camada até que o
+                    objeto esteja completo.
+                  </p>
+                  <p>
+                    Os materiais utilizados podem incluir plásticos, resinas,
+                    metais, entre outros. As impressoras 3D são amplamente
+                    empregadas em diversas áreas, como prototipagem rápida,
+                    fabricação, medicina, educação e design.
+                  </p>
+                  <p>
+                    Esse equipamento auxilia no desenvolvimento de habilidades
+                    STEAM (Ciência, Tecnologia, Engenharia, Artes e Matemática),
+                    permitindo que os alunos criem modelos tridimensionais e
+                    incentivando o pensamento crítico e a resolução de
+                    problemas. Os projetos podem variar desde a criação de
+                    protótipos de engenharia até modelos científicos complexos.
+                  </p>
+                  <p>
+                    A impressão 3D possibilita que os alunos transformem suas
+                    ideias em objetos físicos, proporcionando uma experiência de
+                    aprendizado mais concreta e tangível. Isso é especialmente
+                    útil em componentes curriculares como biologia, onde os
+                    alunos podem imprimir modelos de células ou órgãos.
+                  </p>
+                  <p>
+                    <b
+                      >A impressora 3D oferece diversas vantagens em seu uso no
+                      ambiente escolar, entre elas:</b
+                    >
+                  </p>
+                  <!-- collapsible -->
+                  <ul class="collapsible expansable my-40">
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Estímulo à criatividade e inovação</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <p>
+                            Os alunos podem projetar e criar seus próprios
+                            objetos, estimulando a criatividade e a inovação.
+                            Isso é benéfico não apenas para áreas como
+                            tecnologia e engenharia, mas também para artes e
+                            design.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Interdisciplinaridade</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <p>
+                            Projetos de impressão 3D frequentemente envolvem
+                            múltiplos componentes curriculares, ajudando os
+                            alunos a fazer conexões entre diferentes áreas do
+                            conhecimento. Por exemplo, um projeto pode combinar
+                            conceitos de geometria (matemática), física
+                            (propriedades dos materiais) e design (arte).
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Inclusão e personalização do aprendizado</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <p>
+                            Impressoras 3D podem ser usadas para criar materiais
+                            didáticos personalizados, atendendo às necessidades
+                            específicas de diferentes alunos, incluindo aqueles
+                            com deficiências.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Preparação para o futuro</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <p>
+                            A familiarização com a tecnologia de impressão 3D
+                            prepara os alunos para o mercado de trabalho, no
+                            qual essas habilidades são cada vez mais
+                            valorizadas. Eles aprendem não apenas a utilizar a
+                            tecnologia, mas também a entender seus princípios e
+                            aplicações.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <p>
+                    O ATE é responsável pelo controle e pela operação da
+                    impressora 3D na escola. Além disso, ele deve monitorar o
+                    estoque dos materiais e insumos necessários para o uso.
+                    Quando houver necessidade de adquirir quaisquer materiais
+                    para funcionamento da impressora, o ATE deve comunicar à
+                    gerência e ao setor de compra para garantir a reposição
+                    contínua, mantendo a impressora disponível para as
+                    atividades pedagógicas da unidade.
+                  </p>
+                  <p>
+                    É também função do ATE informar o setor de TI da escola
+                    sobre quaisquer alterações no funcionamento da impressora
+                    3D. Os técnicos de TI da unidade serão responsáveis por
+                    realizar a manutenção e/ou atualizações do equipamento.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 2--><!-- Modal Sala 3-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-3"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Labdisc</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <p>
+                    O Labdisc é um laboratório de ciências portátil e versátil,
+                    amplamente utilizado em escolas para enriquecer o ensino.
+                    Equipado com diversos sensores integrados, ele permite a
+                    realização de experimentos e a coleta de dados em tempo real
+                    de forma prática e interativa.
+                  </p>
+                  <p>
+                    Além disso, o Labdisc promove uma aprendizagem mais dinâmica
+                    e envolvente, incentivando a curiosidade científica e a
+                    investigação. Os professores podem utilizar o equipamento
+                    para demonstrar princípios teóricos, realizar projetos
+                    experimentais e estimular discussões sobre fenômenos
+                    naturais, tornando o ensino de ciências mais interativo e
+                    eficaz.
+                  </p>
+                  <p>
+                    O ATE deve garantir que os sensores estejam organizados
+                    junto aos seus respectivos dispositivos. Os Labdiscs devem
+                    ser carregados pontualmente após o uso, e seus sensores
+                    devem ser higienizados.
+                  </p>
+                  <p>
+                    Recomenda-se utilizar o Labdisc em conjunto com um tablet ou
+                    notebook para uma melhor visualização dos dados mensurados
+                    nas atividades. O ATE deve enviar os relatórios ("logs")
+                    gerados pelos equipamentos durante as atividades em sala de
+                    aula para os professores, caso seja necessário. Para isso, é
+                    possível usar o tablet ou o computador, por meio do software
+                    Globilab.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 3--><!-- Modal Sala 4-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-4"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0">
+                      <b>Óculos de Realidade Virtual</b>
+                    </p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <p>
+                    A realidade virtual proporciona uma experiência imersiva,
+                    transportando o usuário para novos contextos.
+                  </p>
+                  <p>
+                    Ela permite que os alunos explorem lugares, realizem
+                    experimentos científicos ou participem de simulações,
+                    tornando o aprendizado mais interativo, motivador e
+                    dinâmico.
+                  </p>
+                  <p>
+                    Essa solução educacional não apenas enriquece o conteúdo de
+                    estudo, mas também serve como uma poderosa ferramenta para
+                    os professores promoverem o engajamento e o interesse dos
+                    alunos.
+                  </p>
+                  <p>
+                    Para utilizar esse recurso, que inclui celular e óculos de
+                    realidade virtual (VR), o ATE deve:
+                  </p>
+                  <ul>
+                    <li>
+                      verificar se os celulares solicitados estão carregados;
+                    </li>
+                    <li>
+                      solicitar que o professor envie previamente o material a
+                      ser utilizado (vídeo, link, aplicativo, etc.), para que
+                      seja testado nos óculos e, se necessário, acionar o setor
+                      de TI para a instalação ou verificação da origem do
+                      conteúdo;
+                    </li>
+                    <li>
+                      criar uma lista de reprodução para facilitar o acesso aos
+                      conteúdos e desativar a reprodução automática, caso o
+                      material utilize vídeos do YouTube;
+                    </li>
+                    <li>
+                      garantir que os óculos estejam devidamente ajustados à
+                      cabeça dos alunos durante o uso em sala de aula.
+                    </li>
+                  </ul>
+                  <p>
+                    O ATE não é responsável por realizar a instalação e
+                    atualização de softwares nos equipamentos. É importante
+                    alinhar com o setor de TI da unidade para que os celulares
+                    sejam atualizados periodicamente, além de desabilitar as
+                    atualizações automáticas, a fim de evitar interrupções
+                    durante o uso em sala de aula.
+                  </p>
+                  <p>
+                    Caso sejam detectados aplicativos não autorizados nos
+                    dispositivos, o ATE deve acionar o setor de TI para
+                    solicitar a desinstalação.
+                  </p>
+                  <div
+                    class="box-attention box-attention--02 flex--justify-between flex--align-center p-16 px-0"
+                    style="flex-wrap: wrap"
+                  >
+                    <div class="flex--align-center">
+                      <p><b>Ambientes óculos VR</b></p>
+                    </div>
+                    <a
+                      href="#"
+                      class="btn btn-game btn-game--gray"
+                      @click="review($event, 'review-01')"
+                      >Clique aqui e conheça os ambientes</a
+                    >
+                  </div>
+                  <img
+                    src="src/img/TEMPLATE_SESITEC_oculos.png"
+                    alt="Ambientes"
+                    loading="lazy"
+                    style="width: 100%"
+                    class="mt-24 review-01 scale-transition scale-out"
+                  />
+                  <p>
+                    Foram selecionados conteúdos de diversas áreas do
+                    conhecimento e desenvolvidos 12 ambientes com base nas
+                    habilidades descritas na BNCC.
+                  </p>
+                  <p>
+                    A partir da imersão nos ambientes, os estudantes recebem a
+                    orientação do professor para participar de momentos
+                    históricos e inacessíveis, aprendendo de forma enriquecedora
+                    por meio dessa experiência.
+                  </p>
+                  <p>
+                    É importante que o ATE se familiarize com os ambientes
+                    disponíveis no aplicativo, os documentos de cada ambiente e
+                    o manual de uso, para que possa orientar os professores
+                    sobre a utilização e as potencialidades desse recurso.
+                  </p>
+                  <hr />
+                  <br />
+                  <div class="flex--align-center flex--justify-between">
+                    <div>
+                      <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                      <p>
+                        <b
+                          >Para mais informações sobre os Ambientes Virtuais,
+                          acesse o QR Code.</b
+                        >
+                      </p>
+                    </div>
+                    <img
+                      src="src/img/qr-modal.webp"
+                      alt="QR CODE"
+                      loading="lazy"
+                      style="width: 100%; max-width: 80px"
+                      class="mb-24"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 4--><!-- Modal Sala 5-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-5"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Tablets</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <p>
+                    Os tablets são como um laboratório de informática
+                    itinerante, com recursos multimídia que possibilitam
+                    pesquisas, imersões e atividades com resultados
+                    instantâneos.
+                  </p>
+                  <p>
+                    Quando utilizados com intencionalidade pedagógica, os
+                    tablets podem transformar a sala de aula em um ambiente de
+                    aprendizagem mais interativo, colaborativo e eficaz.
+                  </p>
+                  <p>
+                    Eles incentivam a interatividade e facilitam o acesso a
+                    recursos digitais, como e-books, vídeos e quizzes, tornando
+                    a aprendizagem mais envolvente e significativa.
+                  </p>
+                  <p>
+                    Com os tablets, é possível realizar pesquisas para
+                    aprofundar o conhecimento, além de criar conteúdos digitais,
+                    desenvolvendo habilidades de comunicação e criatividade.
+                  </p>
+                  <p>
+                    Essa ferramenta também promove a inclusão de alunos com
+                    necessidades especiais, oferecendo recursos de
+                    acessibilidade.
+                  </p>
+                  <p>
+                    <b
+                      >Para conservar a vida útil da bateria dos tablets,
+                      devem-se seguir os seguintes cuidados:</b
+                    >
+                  </p>
+                  <!-- collapsible -->
+                  <ul class="collapsible expansable my-40">
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Evite o superaquecimento</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <p>
+                            Uma das principais causas do estufamento da bateria
+                            é o superaquecimento. Evite expor os tablets a altas
+                            temperaturas, como deixá-los sob luz solar direta ou
+                            próximo a fontes de calor. Além disso, não os
+                            utilize enquanto estiverem carregando, pois isso
+                            pode aumentar a temperatura da bateria.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Carregue corretamente</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <p>
+                            Evite carregar a bateria até 100% ou deixá-la
+                            descarregar completamente. O ideal é manter a carga
+                            entre 20% e 80%. Utilize o carregador original do
+                            dispositivo ou um carregador de terceiros
+                            certificado. Considere desativar o carregamento
+                            rápido, pois ele pode gerar mais calor. Deixar
+                            carrinhos cheios de tablets carregando durante toda
+                            a noite também aumenta a temperatura das baterias.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Armazenamento adequado</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <p>
+                            Se não for utilizar os tablets por um longo período,
+                            armazene-os com cerca de 50% de carga. Evite
+                            deixá-los completamente descarregados por muito
+                            tempo.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Atualize o software</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <p>
+                            Mantenha o sistema operacional e os aplicativos
+                            atualizados, pois as atualizações podem incluir
+                            otimizações para a bateria – responsabilidade do
+                            técnico de TI.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Proteja a bateria</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <p>
+                            Alguns dispositivos possuem o recurso “Proteger a
+                            bateria”. Ative esse recurso para limitar a carga da
+                            bateria entre 20% e 80%, prolongando assim sua vida
+                            útil – responsabilidade do técnico de TI.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 5--><!-- Modal Sala 6-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-6"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Kits de robótica</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <p>
+                    As escolas possuem diversos kits de robótica do LEGO®
+                    Education, cuja disponibilidade varia de acordo com os anos
+                    escolares atendidos em cada unidade.
+                  </p>
+                  <p>
+                    Esses kits fazem parte dos equipamentos do SESITEC e são
+                    ferramentas poderosas para enriquecer a aprendizagem dos
+                    alunos, oferecendo uma série de benefícios educacionais.
+                  </p>
+                  <p>
+                    Ao usar os kits de robótica, os estudantes têm a
+                    oportunidade de vivenciar o processo de criação e
+                    gerenciamento de projetos, indo além da simples aprendizagem
+                    técnica. Eles favorecem o desenvolvimento de habilidades
+                    essenciais, como resolução de problemas, pensamento crítico,
+                    colaboração e criatividade. Além disso, incentivam uma
+                    aprendizagem prática, intuitiva e inclusiva, em que os
+                    alunos aplicam os conceitos aprendidos, tornando a
+                    experiência mais dinâmica e envolvente.
+                  </p>
+                  <p>
+                    O ATE é responsável pela organização e preparação dos kits
+                    de robótica para uso. Se o kit incluir hubs (como LEGO®
+                    Education SPIKE Prime ou LEGO® Education SPIKE Essential), é
+                    necessário garantir que estejam carregados antes das aulas.
+                    A organização dos kits também faz parte do processo
+                    educativo, e os alunos são incentivados pelos professores a
+                    mantê-los organizados durante o uso.
+                  </p>
+                  <p>
+                    É recomendado que o ATE revise periodicamente os kits,
+                    verificando peças, testando motores e hubs. Caso seja
+                    necessário fazer reposições, é função do ATE encaminhar o
+                    código e a quantidade de peças que precisam ser repostas
+                    para a gerência da unidade. Recomenda-se o uso do site Brick
+                    Owl para consulta dos códigos identificadores de cada peça.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 6--><!-- Modal Sala 7-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-7"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Streaming Media Player</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <p>
+                    O Streaming Media Player é uma ferramenta tecnológica
+                    utilizada nas escolas para facilitar a projeção de conteúdo
+                    digital nas salas de aula. Esse dispositivo de streaming
+                    permite que professores e alunos transmitam facilmente
+                    vídeos, apresentações, páginas da web e outros materiais
+                    didáticos diretamente de um smartphone ou tablet para uma
+                    tela maior, como uma TV ou projetor.
+                  </p>
+                  <p>
+                    O ATE deve garantir que os Streaming Media Player estejam
+                    prontos para uso em sala de aula, devidamente conectados ao
+                    projetor ou à TV.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 7--><!-- Modal Sala 8-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-8"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Miniestúdio</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <p>
+                    O estúdio, equipado com câmera, tripé e chromakey (fundo
+                    verde), é utilizado para enriquecer o processo de ensino,
+                    proporcionando uma experiência de aprendizagem mais
+                    envolvente e criativa.
+                  </p>
+                  <p>
+                    O miniestúdio pode ser utilizado de diversas maneiras nas
+                    atividades escolares. Professores e alunos podem criar
+                    podcasts e vídeos que explicam conceitos complexos de forma
+                    visualmente atrativa, além de desenvolver projetos
+                    multidisciplinares.
+                  </p>
+                  <p>
+                    A tecnologia chromakey permite substituir o fundo verde por
+                    qualquer imagem ou vídeo, tornando as aulas mais dinâmicas e
+                    interativas.
+                  </p>
+                  <p>
+                    Esse equipamento contribui para o aprimoramento das
+                    habilidades de comunicação e apresentação, além de estimular
+                    a criatividade. Ele permite que os alunos criem histórias,
+                    notícias e documentários enquanto aprendem sobre produção e
+                    edição de vídeo.
+                  </p>
+                  <p>
+                    O uso dessas tecnologias aumenta o engajamento dos alunos,
+                    motivando-os a participar mais ativamente das atividades
+                    escolares.
+                  </p>
+                  <!-- collapsible -->
+                  <ul class="collapsible expansable my-40">
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p><b>Cuidados com a câmera do miniestúdio</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <ul>
+                            <li>
+                              a câmera deve ser guardada em um local seguro, com
+                              a lente devidamente tampada para evitar arranhões;
+                            </li>
+                            <li>
+                              as fotos e os vídeos devem ser enviados o mais
+                              rápido possível aos responsáveis pelas atividades,
+                              a fim de evitar que o cartão de memória fique sem
+                              espaço;
+                            </li>
+                            <li>
+                              a bateria da câmera deve ser recarregada após cada
+                              atividade que a utilize;
+                            </li>
+                            <li>
+                              caso a câmera seja utilizada com o tripé, é
+                              necessário verificar se o encaixe está firme para
+                              evitar quedas do equipamento.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header orange-text">
+                        <p>
+                          <b
+                            >Utilização da câmera durante as atividades
+                            escolares</b
+                          >
+                        </p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="py-24">
+                          <ul>
+                            <li>
+                              manter a câmera no modo de foco automático ("AF");
+                            </li>
+                            <li>ativar o estabilizador (“stabilizer”);</li>
+                            <li>
+                              caso utilize os recursos de chromakey, enquadrar a
+                              pessoa ou o objeto totalmente dentro da área do
+                              fundo verde;
+                            </li>
+                            <li>
+                              para filmagens, configurar a qualidade para Full
+                              HD – 60 fps, uma vez que gravações em 4K geram
+                              arquivos excessivamente grandes, dificultando o
+                              compartilhamento e a edição.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 8--><!-- Modal Sala 9-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-9"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Notebooks</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <p>
+                    No SESITEC, temos notebooks disponíveis para o
+                    desenvolvimento de projetos educacionais que envolvem
+                    plataformas não suportadas pelos tablets, como o Minecraft
+                    Education, softwares de modelagem 3D e trabalhos que exigem
+                    digitação nos softwares da Microsoft 365.
+                  </p>
+                  <p>
+                    Esses equipamentos oferecem flexibilidade e recursos para
+                    atividades mais avançadas, permitindo o uso de uma gama
+                    maior de softwares. São ideais para tarefas como produção
+                    textual, criação de apresentações e utilização de softwares
+                    mais robustos.
+                  </p>
+                  <p>
+                    Os notebooks do SESITEC funcionam como um laboratório móvel,
+                    devendo ser levados até os alunos nos diferentes ambientes
+                    de aprendizagem da escola. Por esse motivo, esses
+                    equipamentos não devem ser fixados nas salas de aula, nem
+                    direcionados exclusivamente para uma única atividade ou
+                    projeto.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 9--><!-- Modal Sala 10-->
+        <div
+          class="hystmodal hystmodal--large"
+          id="modal-sala-10"
+          aria-hidden="true"
+        >
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align">
+                <div class="hystmodal-header p-24 p-16-mobile">
+                  <div class="flex--align-center flex--justify-between">
+                    <p class="m-0"></p>
+                    <div>
+                      <img
+                        data-hystclose
+                        class="modal-close pointer"
+                        src="src/img/close-light.svg"
+                        alt="Close"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tag white-text">EQUIPAMENTOS SESITEC</div>
+                    <p class="white-text mb-0"><b>Atividades SESITEC</b></p>
+                  </div>
+                </div>
+                <div class="hystmodal-body p-24 p-16-mobile">
+                  <div
+                    class="box-attention box-attention--02 flex--justify-between flex--align-center p-16 px-0"
+                    style="flex-wrap: wrap"
+                  >
+                    <div class="flex--align-center">
+                      <p><b>Propostas de atividades SESITEC</b></p>
+                    </div>
+                    <a
+                      href="https://fiemg.sharepoint.com/:f:/s/NITE/EuFxk3IZRzBBmBOmlLuPqf0BqUTl_c6emGSHB_PpwdHZDw?e=FilGLX"
+                      target="_blank"
+                      class="btn btn-game btn-game--gray"
+                      >Clique aqui e conheça</a
+                    >
+                  </div>
+                  <p>
+                    Baseadas na Base Nacional Comum Curricular (BNCC), as
+                    propostas de atividades foram elaboradas por um grupo
+                    multidisciplinar de professores da rede.
+                  </p>
+                  <p>
+                    O material contém atividades para diversos componentes
+                    curriculares, utilizando os recursos do SESITEC com um
+                    propósito pedagógico bem definido, promovendo melhorias
+                    significativas no processo de ensino-aprendizagem.
+                  </p>
+                  <p>
+                    É fundamental que o ATE se familiarize com as propostas
+                    disponíveis, para que possa realizar uma curadoria adequada
+                    e orientar os professores conforme o planejamento de suas
+                    aulas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal Sala 10-->
+      </div>
+    </div>
+  </body>
+</html>
